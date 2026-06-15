@@ -68,5 +68,12 @@
     "title": "Visual Style for Pizzonia’s Personal Study Project (PPSP)",
     "section": "License",
     "text": "License\n\n \n\nThe code in this report is licensed under the GNU General Public License Version 3, while the report is available under the Creative Commons Attribution-NonCommercial-ShareAlike 4.0 International license.\nCopyright (C) 2026 Pizzonia's Personal Study Project\n\nThe code in this report is free software: you can redistribute it and/or\nmodify it under the terms of the GNU General Public License as published by the\nFree Software Foundation, either version 3 of the License, or (at your option)\nany later version.\n\nThis program is distributed in the hope that it will be useful, but WITHOUT ANY\nWARRANTY; without even the implied warranty of MERCHANTABILITY or FITNESS FOR A\nPARTICULAR PURPOSE. See the GNU General Public License for more details.\n\nYou should have received a copy of the GNU General Public License along with\nthis program. If not, see &lt;https://www.gnu.org/licenses/&gt;."
+  },
+  {
+    "objectID": "index.html#references",
+    "href": "index.html#references",
+    "title": "Visual Style for Pizzonia’s Personal Study Project (PPSP)",
+    "section": "References",
+    "text": "References\n\n\nGrosser, M., Bumann, H., & Wickham, H. (2021). Advanced R solutions. CRC Press.\n\n\nVartanian, D. (n.d.). CEM brand identity showcase [Computer software]. Retrieved https://github.com/cem-usp/brand-yml\n\n\nWickham, H. (2016). ggplot2: Elegant graphics for data analysis (2nd ed.). Springer. https://doi.org/10.1007/978-3-319-24277-4\n\n\nWickham, H. (2019). Advanced R (2nd ed.). CRC Press. https://adv-r.hadley.nz\n\n\nWickham, H., Çetinkaya-Rundel, M., & Grolemund, G. (2023). R for data science: Import, tidy, transform, visualize, and model data (2nd ed.). O’Reilly Media. https://r4ds.hadley.nz\n\n\nWilkinson, L. (2005). The grammar of graphics (J. Chambers, D. Hand, & W. Härdle, Eds.; 2nd ed.). Springer."
   }
 ]

@@ -60,3 +60,5 @@ format:
 
 google-scholar: true
 bibliography: references.bib
+nocite: |
+  @*
