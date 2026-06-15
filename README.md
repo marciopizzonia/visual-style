@@ -40,7 +40,26 @@ This will start the rendering process. Once complete, the [Quarto](https://quart
 
 Contributions are always welcome! Whether you want to report bugs, suggest new features, or help improve the code or documentation, your input makes a difference.
 
-Before opening a new issue, please check the [issues tab](https://github.com/cen-usp/brand-yml/issues) to see if your topic has already been reported.
+Before opening a new issue, please check the [issues tab](https://marciopizzonia.github.io/visual-style/issues) to see if your topic has already been reported.
+
+## Citation
+
+To cite this work, please use the following format:
+
+Pizzonia, M. A. Jr. (2026). *Visual Style for Pizzonia's Personal Study Project (PPSP)* \[Computer software\]. <https://marciopizzonia.github.io/visual-style/>
+
+A BibTeX entry for LaTeX users is
+
+```latex
+@software{pizzonia-vs-2026,
+  title = {Visual Style for Pizzonia's Personal Study Project (PPSP)},
+  author = {{Marcio Antonio Pizzonia Junior}},
+  year = {2026},
+  address = {São Paulo},
+  langid = {en},
+  url = {https://marciopizzonia.github.io/visual-style/}
+}
+```
 
 ## License
 
@@ -64,5 +83,3 @@ PARTICULAR PURPOSE. See the GNU General Public License for more details.
 You should have received a copy of the GNU General Public License along with
 this program. If not, see <https://www.gnu.org/licenses/>.
 ```
-
-## Acknowledgments
