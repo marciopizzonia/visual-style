@@ -1,0 +1,72 @@
+[
+  {
+    "objectID": "index.html#overview",
+    "href": "index.html#overview",
+    "title": "Visual Style for Pizzonia’s Personal Study Project (PPSP)",
+    "section": "Overview",
+    "text": "Overview"
+  },
+  {
+    "objectID": "index.html#brand.yml-configuration",
+    "href": "index.html#brand.yml-configuration",
+    "title": "Visual Style for Pizzonia’s Personal Study Project (PPSP)",
+    "section": "\nbrand.yml Configuration",
+    "text": "brand.yml Configuration\n\n\n\nbrand.yml\n\nmeta:\n  name:\n    short: PPSP\n    full: Pizzonia's Personal Study Project\n  link:\n    github: https://github.com/marciopizzonia\n    linkedin: https://www.linkedin.com/in/marcio-antonio-pizzonia-junior-b64798305/\n  description: |\n    The Pizzonia's Personal Study Project (PPSP) was created to investigate questions and topics that go beyond the scope of formal academic coursework, fostering independent learning and intellectual exploration.\n  founded: 2026\n\ncolor:\n  palette:\n    black: \"#141414\"\n    dark-red: \"#8b0000\"\n    orange: \"#eb4c00\" \n    blue: \"#0078b4\"\n    white: \"#ffffff\"\n    gray: \"#868489\"\n    mono-orange-1: \"#ffedeb\" \n    mono-orange-2: \"#ffc1ba\"\n    mono-orange-3: \"#ff8672\"\n    mono-orange-4: \"#ae3600\"\n    mono-orange-5: \"#752100\"\n    mono-orange-6: \"#400e00\"\n    comp-orange-1: \"#d3e7ff\" \n    comp-orange-2: \"#81c3ff\"\n    comp-orange-3: \"#009feb\"\n    comp-orange-4: \"#00547f\"\n    comp-orange-5: \"#00324e\"\n    comp-orange-6: \"#001321\"\n    square-purple: \"#3f0074\"\n    square-green: \"#9ffe00\"\n    square-blue: \"#08ffe3\"\n    square-red: \"#a80013\"\n    gray-l50: \"#c1bfc4\" \n    gray-l75: \"#b9b9b9\"\n    gray-l90: \"#e2e2e2\"\n    gray-l95: \"#f1f1f1\"\n  background: white\n  primary: orange\n  secondary: blue\n  tertiary: black\n  success: square-green\n  info: square-blue\n  warning: mono-orange-3\n  danger: dark-red\n  light: white\n  dark: black\n\ntypography:\n  fonts:\n    - family: Montserrat\n      source: google\n    - family: Roboto\n      source: google\n    - family: Roboto Mono\n      source: google\n  base:\n    family: Roboto\n    line-height: 1.5\n    weight: normal\n  headings:\n    family: Montserrat\n    color: orange\n    line-height: 1.25\n    weight: 800\n  monospace: Roboto Mono\n  monospace-inline:\n    color: comp-orange-4\n    background-color: gray-l95\n  monospace-block:\n    background-color: gray-l95\n  link:\n    color: comp-orange-4\n    decoration: none"
+  },
+  {
+    "objectID": "index.html#set-the-environment",
+    "href": "index.html#set-the-environment",
+    "title": "Visual Style for Pizzonia’s Personal Study Project (PPSP)",
+    "section": "Set the Environment",
+    "text": "Set the Environment\nLoad Packages\n\nlibrary(brandr)\nlibrary(dplyr)\nlibrary(geobr)\nlibrary(ggplot2)\nlibrary(ggspatial)\nlibrary(here)\nlibrary(htmltools)\nlibrary(palmerpenguins)\nlibrary(sf)\nlibrary(tidyr)"
+  },
+  {
+    "objectID": "index.html#bar-plots",
+    "href": "index.html#bar-plots",
+    "title": "Visual Style for Pizzonia’s Personal Study Project (PPSP)",
+    "section": "Bar Plots",
+    "text": "Bar Plots\n\nCodepenguins |&gt;\n  ggplot(\n    aes(\n      x = sex,\n      fill = species\n    )\n  ) +\n  geom_bar(alpha = 0.8) +\n  facet_wrap(vars(species), ncol = 1) +\n  scale_fill_brand_d() +\n  coord_flip() +\n  labs(\n    x = \"Island\",\n    y = \"Frequency\",\n    fill = \"Species\"\n  )"
+  },
+  {
+    "objectID": "index.html#histograms",
+    "href": "index.html#histograms",
+    "title": "Visual Style for Pizzonia’s Personal Study Project (PPSP)",
+    "section": "Histograms",
+    "text": "Histograms\n\nCodepenguins |&gt;\n  drop_na(\n    flipper_length_mm,\n    species\n  ) |&gt;\n  ggplot(\n    aes(\n      x = flipper_length_mm,\n      fill = species\n    )\n  ) +\n  geom_histogram(\n    bins = 30,\n    alpha = 0.5,\n    position = \"identity\"\n  ) +\n  scale_fill_brand_d() +\n  labs(\n    x = \"Flipper Length (mm)\",\n    y = \"Frequency\",\n    fill = \"Species\"\n  )"
+  },
+  {
+    "objectID": "index.html#boxplots",
+    "href": "index.html#boxplots",
+    "title": "Visual Style for Pizzonia’s Personal Study Project (PPSP)",
+    "section": "Boxplots",
+    "text": "Boxplots\n\nCodepenguins |&gt;\n  drop_na(\n    bill_length_mm,\n    species\n  ) |&gt;\n  ggplot(\n    aes(\n      x = species,\n      y = bill_length_mm,\n      fill = species\n    )\n  ) +\n  geom_boxplot(\n    outlier.color = get_brand_color(\"dark-red\")\n  ) +\n  geom_jitter(\n    width = 0.2,\n    alpha = 0.1\n  ) +\n  scale_fill_brand_d(alpha = 0.7) +\n  labs(\n    x = \"Species\",\n    y = \"Bill Length (mm)\",\n    fill = \"Species\"\n  )"
+  },
+  {
+    "objectID": "index.html#density",
+    "href": "index.html#density",
+    "title": "Visual Style for Pizzonia’s Personal Study Project (PPSP)",
+    "section": "Density",
+    "text": "Density\n\nCodepenguins |&gt;\n  drop_na(\n    flipper_length_mm,\n    species\n  ) |&gt;\n  ggplot(\n    aes(\n      x = flipper_length_mm,\n      fill = species\n    )\n  ) +\n  geom_density(\n    alpha = 0.5,\n    position = \"identity\"\n  ) +\n  scale_fill_brand_d() +\n  labs(\n    x = \"Flipper Length (mm)\",\n    y = \"Density\",\n    fill = \"Species\"\n  ) +\n  theme(\n    legend.position = \"none\"\n  )"
+  },
+  {
+    "objectID": "index.html#scatterplots",
+    "href": "index.html#scatterplots",
+    "title": "Visual Style for Pizzonia’s Personal Study Project (PPSP)",
+    "section": "Scatterplots",
+    "text": "Scatterplots\n\nCodepenguins |&gt;\n  drop_na(\n    body_mass_g,\n    flipper_length_mm,\n    species\n  ) |&gt;\n  ggplot(\n    aes(\n      x = body_mass_g,\n      y = flipper_length_mm,\n      color = species,\n      shape = species\n    )\n  ) +\n  geom_point(size = 2) +\n  geom_smooth(\n    method = \"lm\",\n    formula = y ~ x,\n    se = FALSE\n  ) +\n  scale_color_brand_d(alpha = 0.7) +\n  labs(\n    x = \"Body Mass (g)\",\n    y = \"Flipper Length (mm)\",\n    color = \"Species\",\n    shape = \"Species\"\n  )"
+  },
+  {
+    "objectID": "index.html#maps",
+    "href": "index.html#maps",
+    "title": "Visual Style for Pizzonia’s Personal Study Project (PPSP)",
+    "section": "Maps",
+    "text": "Maps\n\nCodebrazil_states &lt;- read_state(year = 2024)\n\n\n\nCodedata &lt;-\n  brazil_states |&gt;\n  mutate(\n    n = sample(\n      1:1000,\n      size = n(),\n      replace = TRUE\n    ),\n  )\n\n\n\nCodeplot &lt;-\n  data |&gt;\n  ggplot() +\n  geom_sf(\n    aes(fill = n),\n    color = get_brand_color(\"gray\")\n  ) +\n  scale_fill_brand_b(\n    n.breaks = 6\n  ) +\n  labs(fill = NULL) +\n  annotation_scale(\n    location = \"br\",\n    style = \"tick\",\n    width_hint = 0.25,\n    height = unit(0.15, \"cm\")\n  ) +\n  annotation_north_arrow(\n    location = \"br\",\n    height = unit(2, \"lines\"),\n    width = unit(2, \"lines\"),\n    pad_x = unit(0.25, \"lines\"),\n    pad_y = unit(1.25, \"lines\"),\n    style = north_arrow_fancy_orienteering\n  )\n\n\nContinuous\n\nCodeplot\n#&gt; Scale on map varies by more than 10%, scale bar may be inaccurate\n\n\n\n\n\n\n\nDiverging\n\nCodeplot +\n  scale_fill_brand_b(\n    color_type = \"div\",\n    n.breaks = 6\n  )\n#&gt; Scale for fill is already present.\n#&gt; Adding another scale for fill, which will replace the existing scale.\n#&gt; Scale on map varies by more than 10%, scale bar may be inaccurate"
+  },
+  {
+    "objectID": "index.html#license",
+    "href": "index.html#license",
+    "title": "Visual Style for Pizzonia’s Personal Study Project (PPSP)",
+    "section": "License",
+    "text": "License\n\n \n\nThe code in this report is licensed under the GNU General Public License Version 3, while the report is available under the Creative Commons Attribution-NonCommercial-ShareAlike 4.0 International license.\nCopyright (C) 2026 Pizzonia's Personal Study Project\n\nThe code in this report is free software: you can redistribute it and/or\nmodify it under the terms of the GNU General Public License as published by the\nFree Software Foundation, either version 3 of the License, or (at your option)\nany later version.\n\nThis program is distributed in the hope that it will be useful, but WITHOUT ANY\nWARRANTY; without even the implied warranty of MERCHANTABILITY or FITNESS FOR A\nPARTICULAR PURPOSE. See the GNU General Public License for more details.\n\nYou should have received a copy of the GNU General Public License along with\nthis program. If not, see &lt;https://www.gnu.org/licenses/&gt;."
+  }
+]
