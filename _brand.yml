@@ -1,0 +1,76 @@
+meta:
+  name:
+    short: PPSP
+    full: Pizzonia's Personal Study Project
+  link:
+    github: https://github.com/marciopizzonia
+    linkedin: https://www.linkedin.com/in/marcio-antonio-pizzonia-junior-b64798305/
+  description: |
+    The Pizzonia's Personal Study Project (PPSP) was created to investigate questions and topics that go beyond the scope of formal academic coursework, fostering independent learning and intellectual exploration.
+  founded: 2026
+
+color:
+  palette:
+    black: "#141414"
+    dark-red: "#8b0000"
+    orange: "#eb4c00" 
+    blue: "#0078b4"
+    white: "#ffffff"
+    gray: "#868489"
+    mono-orange-1: "#ffedeb" 
+    mono-orange-2: "#ffc1ba"
+    mono-orange-3: "#ff8672"
+    mono-orange-4: "#ae3600"
+    mono-orange-5: "#752100"
+    mono-orange-6: "#400e00"
+    comp-orange-1: "#d3e7ff" 
+    comp-orange-2: "#81c3ff"
+    comp-orange-3: "#009feb"
+    comp-orange-4: "#00547f"
+    comp-orange-5: "#00324e"
+    comp-orange-6: "#001321"
+    square-purple: "#3f0074"
+    square-green: "#9ffe00"
+    square-blue: "#08ffe3"
+    square-red: "#a80013"
+    gray-l50: "#c1bfc4" 
+    gray-l75: "#b9b9b9"
+    gray-l90: "#e2e2e2"
+    gray-l95: "#f1f1f1"
+  background: white
+  primary: orange
+  secondary: blue
+  tertiary: black
+  success: square-green
+  info: square-blue
+  warning: mono-orange-3
+  danger: dark-red
+  light: white
+  dark: black
+
+typography:
+  fonts:
+    - family: Montserrat
+      source: google
+    - family: Roboto
+      source: google
+    - family: Roboto Mono
+      source: google
+  base:
+    family: Roboto
+    line-height: 1.5
+    weight: normal
+  headings:
+    family: Montserrat
+    color: orange
+    line-height: 1.25
+    weight: 800
+  monospace: Roboto Mono
+  monospace-inline:
+    color: comp-orange-4
+    background-color: gray-l95
+  monospace-block:
+    background-color: gray-l95
+  link:
+    color: comp-orange-4
+    decoration: none

@@ -1,0 +1,37 @@
+cff-version: 1.2.0
+title: "Visual Style for Pizzonia's Personal Study Project (PPSP)"
+message: >-
+  If you use this software, please cite it using the metadata from this file.
+type: software
+authors:
+  - given-names: Marcio Antonio, Jr.
+    family-names: Pizzonia
+    email: marcio.pizzonia@usp.br
+    affiliation: University of São Paulo
+    orcid: "https://orcid.org/0009-0009-8979-0240"
+abstract: >-
+  Showcase of the visual identity used across personal educational projects, built with the brand.yml standard.
+keywords:
+  - Visual Style
+  - Educational Project
+  - Design
+  - Graphic Design
+  - Pipelines
+  - brand.yml
+  - Data Visualization
+  - rstats
+preferred-citation:
+  type: software
+  title: "Visual Style for Pizzonia's Personal Study Project (PPSP)"
+  authors:
+    - family-names: Pizzonia
+      given-names: Marcio Antonio, Jr.
+      email: marcio.pizzonia@usp.br
+      orcid: "https://orcid.org/0009-0009-8979-0240"
+  url: https://github.com/marciopizzonia/visual-style
+identifiers:
+  - type: url
+    value: https://github.com/marciopizzonia/visual-style
+    description: Code Repository
+repository-code: https://github.com/marciopizzonia/visual-style
+license: GPL-3.0-or-later

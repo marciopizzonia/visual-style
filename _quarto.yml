@@ -1,0 +1,61 @@
+editor: source
+
+execute:
+  cache: false # "Danger, Will Robinson!"
+  freeze: false # If you plan to use it, remember to disable it afterward!
+
+project:
+  type: website
+  output-dir: docs
+  render: [index.qmd]
+  pre-render: "R/.pre-render.R"
+  post-render: "R/.post-render.R"
+
+title: Visual Style for Pizzonia's Personal Study Project (PPSP)
+author: "Marcio A. Pizzonia Jr."
+keyword: >
+  Visual Style, Educational Project, Design, Graphic Design, Pipelines, brand.yml
+  Data Visualization, rstats
+date: today
+date-format: long
+
+website:
+  site-url: https://marciopizzonia.github.io/visual-style/
+  repo-url: https://github.com/marciopizzonia/visual-style
+  issue-url: https://github.com/marciopizzonia/visual-style/issues/
+  repo-branch: main
+  repo-actions: [edit, source, issue]
+  search: false
+  navbar:
+    title: false
+    background: "#002554"
+    right:
+      - icon: github
+        href: https://github.com/marciopizzonia/visual-style
+        aria-label: GitHub
+
+lightbox:
+  match: auto
+  effect: fade
+  desc-position: bottom
+  loop: false
+
+format:
+  html:
+    toc: true
+    toc-depth: 5
+    toc-location: right
+    locale: en
+    language: en-us
+    code-fold: true
+    code-link: true
+    code-tools: false
+    df-print: paged
+    fig-align: center
+    cap-location: top
+    lightbox: true
+    callout-appearance: simple
+    csl: csl/english-apa-author-date.csl
+    theme: [cosmo, scss/styles.scss, brand]
+
+google-scholar: true

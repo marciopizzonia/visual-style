@@ -1,0 +1,358 @@
+```{r}
+#| label: setup
+#| include: false
+
+library(here)
+
+here("R", ".setup.R") |> source()
+```
+
+<!-- badges: start -->
+[![Project Status: WIP – Initial development is in progress, but there has not yet been a stable, usable release suitable for the public.](https://www.repostatus.org/badges/latest/wip.svg)](https://www.repostatus.org/#wip)
+[![License: GPLv3](https://img.shields.io/badge/license-GPLv3-bd0000.svg)](https://www.gnu.org/licenses/gpl-3.0)
+[![License: CC BY-NC-SA 4.0](https://img.shields.io/badge/license-CC_BY--NC--SA_4.0-lightgrey.svg)](https://creativecommons.org/licenses/by-nc-sa/4.0/)
+[![Contributor Covenant 3.0 code of conduct badge](https://img.shields.io/badge/Contributor%20Covenant-3.0-4baaaa.svg)](https://www.contributor-covenant.org/version/3/0/code_of_conduct/)
+<!-- badges: end -->
+
+## Overview
+
+## `brand.yml` Configuration
+
+<!-- %:::% brand.yml begin %:::% -->
+``` {.yml filename="brand.yml"}
+meta:
+  name:
+    short: PPSP
+    full: Pizzonia's Personal Study Project
+  link:
+    github: https://github.com/marciopizzonia
+    linkedin: https://www.linkedin.com/in/marcio-antonio-pizzonia-junior-b64798305/
+  description: |
+    The Pizzonia's Personal Study Project (PPSP) was created to investigate questions and topics that go beyond the scope of formal academic coursework, fostering independent learning and intellectual exploration.
+  founded: 2026
+
+color:
+  palette:
+    black: "#141414"
+    dark-red: "#8b0000"
+    orange: "#eb4c00" 
+    blue: "#0078b4"
+    white: "#ffffff"
+    gray: "#868489"
+    mono-orange-1: "#ffedeb" 
+    mono-orange-2: "#ffc1ba"
+    mono-orange-3: "#ff8672"
+    mono-orange-4: "#ae3600"
+    mono-orange-5: "#752100"
+    mono-orange-6: "#400e00"
+    comp-orange-1: "#d3e7ff" 
+    comp-orange-2: "#81c3ff"
+    comp-orange-3: "#009feb"
+    comp-orange-4: "#00547f"
+    comp-orange-5: "#00324e"
+    comp-orange-6: "#001321"
+    square-purple: "#3f0074"
+    square-green: "#9ffe00"
+    square-blue: "#08ffe3"
+    square-red: "#a80013"
+    gray-l50: "#c1bfc4" 
+    gray-l75: "#b9b9b9"
+    gray-l90: "#e2e2e2"
+    gray-l95: "#f1f1f1"
+  background: white
+  primary: orange
+  secondary: blue
+  tertiary: black
+  success: square-green
+  info: square-blue
+  warning: mono-orange-3
+  danger: dark-red
+  light: white
+  dark: black
+
+typography:
+  fonts:
+    - family: Montserrat
+      source: google
+    - family: Roboto
+      source: google
+    - family: Roboto Mono
+      source: google
+  base:
+    family: Roboto
+    line-height: 1.5
+    weight: normal
+  headings:
+    family: Montserrat
+    color: orange
+    line-height: 1.25
+    weight: 800
+  monospace: Roboto Mono
+  monospace-inline:
+    color: comp-orange-4
+    background-color: gray-l95
+  monospace-block:
+    background-color: gray-l95
+  link:
+    color: comp-orange-4
+    decoration: none
+```
+<!-- %:::% brand.yml end %:::% -->
+
+## Set the Environment
+
+### Load Packages
+
+```{r}
+#| code-fold: false
+#| output: false
+
+library(brandr)
+library(dplyr)
+library(geobr)
+library(ggplot2)
+library(ggspatial)
+library(here)
+library(htmltools)
+library(palmerpenguins)
+library(sf)
+library(tidyr)
+```
+
+## Bar Plots
+
+```{r}
+penguins |>
+  ggplot(
+    aes(
+      x = sex,
+      fill = species
+    )
+  ) +
+  geom_bar(alpha = 0.8) +
+  facet_wrap(vars(species), ncol = 1) +
+  scale_fill_brand_d() +
+  coord_flip() +
+  labs(
+    x = "Island",
+    y = "Frequency",
+    fill = "Species"
+  )
+```
+
+## Histograms
+
+```{r}
+penguins |>
+  drop_na(
+    flipper_length_mm,
+    species
+  ) |>
+  ggplot(
+    aes(
+      x = flipper_length_mm,
+      fill = species
+    )
+  ) +
+  geom_histogram(
+    bins = 30,
+    alpha = 0.5,
+    position = "identity"
+  ) +
+  scale_fill_brand_d() +
+  labs(
+    x = "Flipper Length (mm)",
+    y = "Frequency",
+    fill = "Species"
+  )
+```
+
+## Boxplots
+
+```{r}
+penguins |>
+  drop_na(
+    bill_length_mm,
+    species
+  ) |>
+  ggplot(
+    aes(
+      x = species,
+      y = bill_length_mm,
+      fill = species
+    )
+  ) +
+  geom_boxplot(
+    outlier.color = get_brand_color("dark-red")
+  ) +
+  geom_jitter(
+    width = 0.2,
+    alpha = 0.1
+  ) +
+  scale_fill_brand_d(alpha = 0.7) +
+  labs(
+    x = "Species",
+    y = "Bill Length (mm)",
+    fill = "Species"
+  )
+```
+
+## Density
+
+```{r}
+penguins |>
+  drop_na(
+    flipper_length_mm,
+    species
+  ) |>
+  ggplot(
+    aes(
+      x = flipper_length_mm,
+      fill = species
+    )
+  ) +
+  geom_density(
+    alpha = 0.5,
+    position = "identity"
+  ) +
+  scale_fill_brand_d() +
+  labs(
+    x = "Flipper Length (mm)",
+    y = "Density",
+    fill = "Species"
+  ) +
+  theme(
+    legend.position = "none"
+  )
+```
+
+## Scatterplots
+
+```{r}
+penguins |>
+  drop_na(
+    body_mass_g,
+    flipper_length_mm,
+    species
+  ) |>
+  ggplot(
+    aes(
+      x = body_mass_g,
+      y = flipper_length_mm,
+      color = species,
+      shape = species
+    )
+  ) +
+  geom_point(size = 2) +
+  geom_smooth(
+    method = "lm",
+    formula = y ~ x,
+    se = FALSE
+  ) +
+  scale_color_brand_d(alpha = 0.7) +
+  labs(
+    x = "Body Mass (g)",
+    y = "Flipper Length (mm)",
+    color = "Species",
+    shape = "Species"
+  )
+```
+
+## Maps
+
+```{r}
+#| output: false
+
+brazil_states <- read_state(year = 2024)
+```
+
+```{r}
+#| output: false
+
+data <-
+  brazil_states |>
+  mutate(
+    n = sample(
+      1:1000,
+      size = n(),
+      replace = TRUE
+    ),
+  )
+```
+
+```{r}
+plot <-
+  data |>
+  ggplot() +
+  geom_sf(
+    aes(fill = n),
+    color = get_brand_color("gray")
+  ) +
+  scale_fill_brand_b(
+    n.breaks = 6
+  ) +
+  labs(fill = NULL) +
+  annotation_scale(
+    location = "br",
+    style = "tick",
+    width_hint = 0.25,
+    height = unit(0.15, "cm")
+  ) +
+  annotation_north_arrow(
+    location = "br",
+    height = unit(2, "lines"),
+    width = unit(2, "lines"),
+    pad_x = unit(0.25, "lines"),
+    pad_y = unit(1.25, "lines"),
+    style = north_arrow_fancy_orienteering
+  )
+```
+
+### Continuous
+
+```{r}
+#| messages: false
+#| #| warning: false
+
+plot
+```
+
+### Diverging
+
+```{r}
+#| messages: false
+#| #| warning: false
+
+plot +
+  scale_fill_brand_b(
+    color_type = "div",
+    n.breaks = 6
+  )
+```
+
+## License
+
+::: {style="text-align: left;"}
+[![License: GPLv3](https://img.shields.io/badge/license-GPLv3-bd0000.svg)](https://www.gnu.org/licenses/gpl-3.0)
+[![License: CC BY-NC-SA 4.0](https://img.shields.io/badge/license-CC_BY--NC--SA_4.0-lightgrey.svg)](https://creativecommons.org/licenses/by-nc-sa/4.0/)
+:::
+
+The code in this report is licensed under the [GNU General Public License Version 3](https://www.gnu.org/licenses/gpl-3.0), while the report is available under the [Creative Commons Attribution-NonCommercial-ShareAlike 4.0 International](https://creativecommons.org/licenses/by-nc-sa/4.0/) license.
+
+``` text
+Copyright (C) 2026 Pizzonia's Personal Study Project
+
+The code in this report is free software: you can redistribute it and/or
+modify it under the terms of the GNU General Public License as published by the
+Free Software Foundation, either version 3 of the License, or (at your option)
+any later version.
+
+This program is distributed in the hope that it will be useful, but WITHOUT ANY
+WARRANTY; without even the implied warranty of MERCHANTABILITY or FITNESS FOR A
+PARTICULAR PURPOSE. See the GNU General Public License for more details.
+
+You should have received a copy of the GNU General Public License along with
+this program. If not, see <https://www.gnu.org/licenses/>.
+```
+
+## Acknowledgments
