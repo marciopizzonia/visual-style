@@ -1,31 +1,73 @@
 [
   {
-    "objectID": "index.html#overview",
-    "href": "index.html#overview",
+    "objectID": "index.html#load-packages",
+    "href": "index.html#load-packages",
     "title": "Visual Style for Pizzonia’s Personal Study Project (PPSP)",
-    "section": "Overview",
-    "text": "Overview"
+    "section": "Load Packages",
+    "text": "Load Packages\n\nlibrary(brandr)\nlibrary(dplyr)\nlibrary(geobr)\nlibrary(ggplot2)\nlibrary(ggspatial)\nlibrary(here)\nlibrary(htmltools)\nlibrary(palmerpenguins)\nlibrary(sf)\nlibrary(tidyr)"
   },
   {
-    "objectID": "index.html#brand.yml-configuration",
-    "href": "index.html#brand.yml-configuration",
+    "objectID": "index.html#static",
+    "href": "index.html#static",
     "title": "Visual Style for Pizzonia’s Personal Study Project (PPSP)",
-    "section": "\nbrand.yml Configuration",
-    "text": "brand.yml Configuration\n\n\n\nbrand.yml\n\nmeta:\n  name:\n    short: PPSP\n    full: Pizzonia's Personal Study Project\n  link:\n    github: https://github.com/marciopizzonia\n    linkedin: https://www.linkedin.com/in/marcio-antonio-pizzonia-junior-b64798305/\n  description: |\n    The Pizzonia's Personal Study Project (PPSP) was created to investigate questions and topics that go beyond the scope of formal academic coursework, fostering independent learning and intellectual exploration.\n  founded: 2026\n\ncolor:\n  palette:\n    black: \"#141414\"\n    dark-red: \"#8b0000\"\n    orange: \"#eb4c00\" \n    blue: \"#0078b4\"\n    white: \"#ffffff\"\n    gray: \"#868489\"\n    mono-orange-1: \"#ffedeb\" \n    mono-orange-2: \"#ffc1ba\"\n    mono-orange-3: \"#ff8672\"\n    mono-orange-4: \"#ae3600\"\n    mono-orange-5: \"#752100\"\n    mono-orange-6: \"#400e00\"\n    comp-orange-1: \"#d3e7ff\" \n    comp-orange-2: \"#81c3ff\"\n    comp-orange-3: \"#009feb\"\n    comp-orange-4: \"#00547f\"\n    comp-orange-5: \"#00324e\"\n    comp-orange-6: \"#001321\"\n    square-purple: \"#3f0074\"\n    square-green: \"#9ffe00\"\n    square-blue: \"#08ffe3\"\n    square-red: \"#a80013\"\n    gray-l50: \"#c1bfc4\" \n    gray-l75: \"#b9b9b9\"\n    gray-l90: \"#e2e2e2\"\n    gray-l95: \"#f1f1f1\"\n  background: white\n  primary: orange\n  secondary: blue\n  tertiary: black\n  success: square-green\n  info: square-blue\n  warning: mono-orange-3\n  danger: dark-red\n  light: white\n  dark: black\n\ntypography:\n  fonts:\n    - family: Montserrat\n      source: google\n    - family: Roboto\n      source: google\n    - family: Roboto Mono\n      source: google\n  base:\n    family: Roboto\n    line-height: 1.5\n    weight: normal\n  headings:\n    family: Montserrat\n    color: orange\n    line-height: 1.25\n    weight: 800\n  monospace: Roboto Mono\n  monospace-inline:\n    color: comp-orange-4\n    background-color: gray-l95\n  monospace-block:\n    background-color: gray-l95\n  link:\n    color: comp-orange-4\n    decoration: none"
+    "section": "Static",
+    "text": "Static\nOne Variable: Single Bar Chart\nTwo Variables: Viariable Widht Column Chart\nThree or More Variables\nFew Items: Multiple Bar Charts\nMany Items: Table With Embedded Charts"
   },
   {
-    "objectID": "index.html#set-the-environment",
-    "href": "index.html#set-the-environment",
+    "objectID": "index.html#changing-over-time",
+    "href": "index.html#changing-over-time",
     "title": "Visual Style for Pizzonia’s Personal Study Project (PPSP)",
-    "section": "Set the Environment",
-    "text": "Set the Environment\nLoad Packages\n\nlibrary(brandr)\nlibrary(dplyr)\nlibrary(geobr)\nlibrary(ggplot2)\nlibrary(ggspatial)\nlibrary(here)\nlibrary(htmltools)\nlibrary(palmerpenguins)\nlibrary(sf)\nlibrary(tidyr)"
+    "section": "Changing Over Time",
+    "text": "Changing Over Time\nMany Periods\nCyclical Data: Circular Area Chart\nNoncyclical Data: Line Chart\nFew Periods\nSingle or Few Items: Column Chart\nMany Items: Line Chart"
   },
   {
-    "objectID": "index.html#bar-plots",
-    "href": "index.html#bar-plots",
+    "objectID": "index.html#single-variable",
+    "href": "index.html#single-variable",
     "title": "Visual Style for Pizzonia’s Personal Study Project (PPSP)",
-    "section": "Bar Plots",
-    "text": "Bar Plots\n\nCodepenguins |&gt;\n  ggplot(\n    aes(\n      x = sex,\n      fill = species\n    )\n  ) +\n  geom_bar(alpha = 0.8) +\n  facet_wrap(vars(species), ncol = 1) +\n  scale_fill_brand_d() +\n  coord_flip() +\n  labs(\n    x = \"Island\",\n    y = \"Frequency\",\n    fill = \"Species\"\n  )"
+    "section": "Single Variable",
+    "text": "Single Variable\nFew Items: Column Histogram\nMany Items: Line Histogram"
+  },
+  {
+    "objectID": "index.html#two-variables-scatter-chart",
+    "href": "index.html#two-variables-scatter-chart",
+    "title": "Visual Style for Pizzonia’s Personal Study Project (PPSP)",
+    "section": "Two Variables: Scatter Chart",
+    "text": "Two Variables: Scatter Chart"
+  },
+  {
+    "objectID": "index.html#three-variables-3d-area-chart",
+    "href": "index.html#three-variables-3d-area-chart",
+    "title": "Visual Style for Pizzonia’s Personal Study Project (PPSP)",
+    "section": "Three Variables: 3D Area Chart",
+    "text": "Three Variables: 3D Area Chart"
+  },
+  {
+    "objectID": "index.html#changin-over-time",
+    "href": "index.html#changin-over-time",
+    "title": "Visual Style for Pizzonia’s Personal Study Project (PPSP)",
+    "section": "Changin Over Time",
+    "text": "Changin Over Time\nFew Periods\nOnly Relative Differences Matter: Stacked 100% Column Chart\nRelative and Absolute Differences Matter: Stacked Column Chart\nMany Periods\nOnly Relative Differences Matter: Stacked 100% Area Chart\nRelative and Absolute Differences Matter: Stacked Area Chart"
+  },
+  {
+    "objectID": "index.html#static-1",
+    "href": "index.html#static-1",
+    "title": "Visual Style for Pizzonia’s Personal Study Project (PPSP)",
+    "section": "Static",
+    "text": "Static\nSimple Share of Total: Pie Chart\nAccumulation or Subtraction to Total: Waterfall Chart\nComponents of Components: Stacked 100% Column Chart With Subcomponents"
+  },
+  {
+    "objectID": "index.html#two-variables-scatter-chart-1",
+    "href": "index.html#two-variables-scatter-chart-1",
+    "title": "Visual Style for Pizzonia’s Personal Study Project (PPSP)",
+    "section": "Two Variables: Scatter Chart",
+    "text": "Two Variables: Scatter Chart"
+  },
+  {
+    "objectID": "index.html#three-variables-bubble-chart",
+    "href": "index.html#three-variables-bubble-chart",
+    "title": "Visual Style for Pizzonia’s Personal Study Project (PPSP)",
+    "section": "Three Variables: Bubble Chart",
+    "text": "Three Variables: Bubble Chart\n\nCodepenguins |&gt;\n  ggplot(\n    aes(\n      x = sex,\n      fill = species\n    )\n  ) +\n  geom_bar(alpha = 0.8) +\n  facet_wrap(vars(species), ncol = 1) +\n  scale_fill_brand_d() +\n  coord_flip() +\n  labs(\n    x = \"Island\",\n    y = \"Frequency\",\n    fill = \"Species\"\n  )"
   },
   {
     "objectID": "index.html#histograms",

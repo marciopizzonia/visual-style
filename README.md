@@ -11,7 +11,7 @@
 
 This repository showcases the visual style of the projects I aim to develop for educational purposes. Furthermore, it serves as a learning resource for my personal development and demonstrates the application of the [`brand.yml`](https://posit-dev.github.io/brand-yml/) configuration.
 
-The report is available [here]().
+The report is available [here](https://github.com/marciopizzonia/visual-style).
 
 ## Usage
 

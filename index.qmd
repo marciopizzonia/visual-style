@@ -14,9 +14,13 @@ here("R", ".setup.R") |> source()
 [![Contributor Covenant 3.0 code of conduct badge](https://img.shields.io/badge/Contributor%20Covenant-3.0-4baaaa.svg)](https://www.contributor-covenant.org/version/3/0/code_of_conduct/)
 <!-- badges: end -->
 
-## Overview
+# Overview
 
-## `brand.yml` Configuration
+This repository showcases the visual style of the projects I aim to develop for educational purposes. Furthermore, it serves as a learning resource for my personal development and demonstrates the application of the [`brand.yml`](https://posit-dev.github.io/brand-yml/) configuration.
+
+The report is available [here](https://github.com/marciopizzonia/visual-style).
+
+# `_brand.yml` Configuration
 
 <!-- %:::% brand.yml begin %:::% -->
 ``` {.yml filename="brand.yml"}
@@ -99,9 +103,9 @@ typography:
 ```
 <!-- %:::% brand.yml end %:::% -->
 
-## Set the Environment
+# Set the Environment
 
-### Load Packages
+## Load Packages
 
 ```{r}
 #| code-fold: false
@@ -119,7 +123,76 @@ library(sf)
 library(tidyr)
 ```
 
-## Bar Plots
+# Comparison
+
+## Static
+
+### One Variable: Single Bar Chart
+
+### Two Variables: Viariable Widht Column Chart
+
+### Three or More Variables
+
+#### Few Items: Multiple Bar Charts
+
+#### Many Items: Table With Embedded Charts
+
+## Changing Over Time
+
+### Many Periods
+
+#### Cyclical Data: Circular Area Chart
+
+#### Noncyclical Data: Line Chart
+
+### Few Periods
+
+#### Single or Few Items: Column Chart
+
+#### Many Items: Line Chart
+
+# Distribution 
+
+## Single Variable
+
+### Few Items: Column Histogram
+
+### Many Items: Line Histogram
+
+## Two Variables: Scatter Chart
+
+## Three Variables: 3D Area Chart
+
+# Composition
+
+## Changin Over Time
+
+### Few Periods
+
+#### Only Relative Differences Matter: Stacked 100% Column Chart
+
+#### Relative and Absolute Differences Matter: Stacked Column Chart
+
+### Many Periods
+
+#### Only Relative Differences Matter: Stacked 100% Area Chart
+
+#### Relative and Absolute Differences Matter: Stacked Area Chart
+
+## Static
+
+### Simple Share of Total: Pie Chart
+
+### Accumulation or Subtraction to Total: Waterfall Chart
+
+### Components of Components: Stacked 100% Column Chart With Subcomponents
+
+# Relationship
+
+## Two Variables: Scatter Chart
+
+## Three Variables: Bubble Chart
+
 
 ```{r}
 penguins |>

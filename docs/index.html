@@ -5,7 +5,7 @@
 <meta name="generator" content="quarto-1.9.37">
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 <meta name="author" content="Marcio A. Pizzonia Jr.">
-<meta name="dcterms.date" content="2026-06-15">
+<meta name="dcterms.date" content="2026-06-21">
 <title>Visual Style for Pizzonia’s Personal Study Project (PPSP)</title>
 <style>
 /* Default styles provided by pandoc.
@@ -116,10 +116,10 @@ div.csl-indent {
 <script src="site_libs/pagedtable-1.1/js/pagedtable.js"></script>
 <meta name="citation_title" content="Visual Style for Pizzonia&amp;amp;#039;s Personal Study Project (PPSP)">
 <meta name="citation_author" content="Marcio A. Pizzonia Jr.">
-<meta name="citation_publication_date" content="2026-06-15">
-<meta name="citation_cover_date" content="2026-06-15">
+<meta name="citation_publication_date" content="2026-06-21">
+<meta name="citation_cover_date" content="2026-06-21">
 <meta name="citation_year" content="2026">
-<meta name="citation_online_date" content="2026-06-15">
+<meta name="citation_online_date" content="2026-06-21">
 <meta name="citation_fulltext_html_url" content="https://marciopizzonia.github.io/visual-style/">
 <meta name="citation_language" content="en">
 <meta name="citation_reference" content="citation_title=Advanced R solutions;,citation_abstract=This book offers solutions to all 284 exercises in Advanced R, Second Edition. All the solutions have been carefully documented and made to be as clear and accessible as possible. Working through the exercises and their solutions will give you a deeper understanding of a variety of programming challenges, many of which are relevant to everyday work. This will expand your set of tools on a technical and conceptual level. You will be able to transfer many of the specific programming schemes directly and will discover far more elegant solutions to everyday problems.Features:When R creates copies, and how it affects memory usage and code performanceEverything you could ever want to know about functionsThe differences between calling and exiting handlersHow to employ functional programming to solve modular tasksThe motivation, mechanics, usage, and limitations of R’s highly pragmatic S3 OO systemThe R6 OO system, which is more like OO programming in other languagesThe rules that R uses to parse and evaluate expressionsHow to use metaprogramming to generate HTML or LaTeX with elegant R codeHow to identify and resolve performance bottlenecks;,citation_author=Malte Grosser;,citation_author=Henning Bumann;,citation_author=Hadley Wickham;,citation_publication_date=2021;,citation_cover_date=2021;,citation_year=2021;,citation_isbn=978-1-032-00749-6;,citation_language=en-US;">
@@ -156,14 +156,102 @@ div.csl-indent {
    
   <ul>
 <li><a href="#overview" id="toc-overview" class="nav-link active" data-scroll-target="#overview">Overview</a></li>
-  <li><a href="#brand.yml-configuration" id="toc-brand.yml-configuration" class="nav-link" data-scroll-target="#brand.yml-configuration"><code>brand.yml</code> Configuration</a></li>
+  <li><a href="#brand.yml-configuration" id="toc-brand.yml-configuration" class="nav-link" data-scroll-target="#brand.yml-configuration"><code>_brand.yml</code> Configuration</a></li>
   <li>
 <a href="#set-the-environment" id="toc-set-the-environment" class="nav-link" data-scroll-target="#set-the-environment">Set the Environment</a>
   <ul>
 <li><a href="#load-packages" id="toc-load-packages" class="nav-link" data-scroll-target="#load-packages">Load Packages</a></li>
   </ul>
 </li>
-  <li><a href="#bar-plots" id="toc-bar-plots" class="nav-link" data-scroll-target="#bar-plots">Bar Plots</a></li>
+  <li>
+<a href="#comparison" id="toc-comparison" class="nav-link" data-scroll-target="#comparison">Comparison</a>
+  <ul>
+<li>
+<a href="#static" id="toc-static" class="nav-link" data-scroll-target="#static">Static</a>
+  <ul>
+<li><a href="#one-variable-single-bar-chart" id="toc-one-variable-single-bar-chart" class="nav-link" data-scroll-target="#one-variable-single-bar-chart">One Variable: Single Bar Chart</a></li>
+  <li><a href="#two-variables-viariable-widht-column-chart" id="toc-two-variables-viariable-widht-column-chart" class="nav-link" data-scroll-target="#two-variables-viariable-widht-column-chart">Two Variables: Viariable Widht Column Chart</a></li>
+  <li>
+<a href="#three-or-more-variables" id="toc-three-or-more-variables" class="nav-link" data-scroll-target="#three-or-more-variables">Three or More Variables</a>
+  <ul class="collapse">
+<li><a href="#few-items-multiple-bar-charts" id="toc-few-items-multiple-bar-charts" class="nav-link" data-scroll-target="#few-items-multiple-bar-charts">Few Items: Multiple Bar Charts</a></li>
+  <li><a href="#many-items-table-with-embedded-charts" id="toc-many-items-table-with-embedded-charts" class="nav-link" data-scroll-target="#many-items-table-with-embedded-charts">Many Items: Table With Embedded Charts</a></li>
+  </ul>
+</li>
+  </ul>
+</li>
+  <li>
+<a href="#changing-over-time" id="toc-changing-over-time" class="nav-link" data-scroll-target="#changing-over-time">Changing Over Time</a>
+  <ul>
+<li>
+<a href="#many-periods" id="toc-many-periods" class="nav-link" data-scroll-target="#many-periods">Many Periods</a>
+  <ul class="collapse">
+<li><a href="#cyclical-data-circular-area-chart" id="toc-cyclical-data-circular-area-chart" class="nav-link" data-scroll-target="#cyclical-data-circular-area-chart">Cyclical Data: Circular Area Chart</a></li>
+  <li><a href="#noncyclical-data-line-chart" id="toc-noncyclical-data-line-chart" class="nav-link" data-scroll-target="#noncyclical-data-line-chart">Noncyclical Data: Line Chart</a></li>
+  </ul>
+</li>
+  <li>
+<a href="#few-periods" id="toc-few-periods" class="nav-link" data-scroll-target="#few-periods">Few Periods</a>
+  <ul class="collapse">
+<li><a href="#single-or-few-items-column-chart" id="toc-single-or-few-items-column-chart" class="nav-link" data-scroll-target="#single-or-few-items-column-chart">Single or Few Items: Column Chart</a></li>
+  <li><a href="#many-items-line-chart" id="toc-many-items-line-chart" class="nav-link" data-scroll-target="#many-items-line-chart">Many Items: Line Chart</a></li>
+  </ul>
+</li>
+  </ul>
+</li>
+  </ul>
+</li>
+  <li>
+<a href="#distribution" id="toc-distribution" class="nav-link" data-scroll-target="#distribution">Distribution</a>
+  <ul>
+<li>
+<a href="#single-variable" id="toc-single-variable" class="nav-link" data-scroll-target="#single-variable">Single Variable</a>
+  <ul>
+<li><a href="#few-items-column-histogram" id="toc-few-items-column-histogram" class="nav-link" data-scroll-target="#few-items-column-histogram">Few Items: Column Histogram</a></li>
+  <li><a href="#many-items-line-histogram" id="toc-many-items-line-histogram" class="nav-link" data-scroll-target="#many-items-line-histogram">Many Items: Line Histogram</a></li>
+  </ul>
+</li>
+  <li><a href="#two-variables-scatter-chart" id="toc-two-variables-scatter-chart" class="nav-link" data-scroll-target="#two-variables-scatter-chart">Two Variables: Scatter Chart</a></li>
+  <li><a href="#three-variables-3d-area-chart" id="toc-three-variables-3d-area-chart" class="nav-link" data-scroll-target="#three-variables-3d-area-chart">Three Variables: 3D Area Chart</a></li>
+  </ul>
+</li>
+  <li>
+<a href="#composition" id="toc-composition" class="nav-link" data-scroll-target="#composition">Composition</a>
+  <ul>
+<li>
+<a href="#changin-over-time" id="toc-changin-over-time" class="nav-link" data-scroll-target="#changin-over-time">Changin Over Time</a>
+  <ul>
+<li>
+<a href="#few-periods-1" id="toc-few-periods-1" class="nav-link" data-scroll-target="#few-periods-1">Few Periods</a>
+  <ul class="collapse">
+<li><a href="#only-relative-differences-matter-stacked-100-column-chart" id="toc-only-relative-differences-matter-stacked-100-column-chart" class="nav-link" data-scroll-target="#only-relative-differences-matter-stacked-100-column-chart">Only Relative Differences Matter: Stacked 100% Column Chart</a></li>
+  <li><a href="#relative-and-absolute-differences-matter-stacked-column-chart" id="toc-relative-and-absolute-differences-matter-stacked-column-chart" class="nav-link" data-scroll-target="#relative-and-absolute-differences-matter-stacked-column-chart">Relative and Absolute Differences Matter: Stacked Column Chart</a></li>
+  </ul>
+</li>
+  <li>
+<a href="#many-periods-1" id="toc-many-periods-1" class="nav-link" data-scroll-target="#many-periods-1">Many Periods</a>
+  <ul class="collapse">
+<li><a href="#only-relative-differences-matter-stacked-100-area-chart" id="toc-only-relative-differences-matter-stacked-100-area-chart" class="nav-link" data-scroll-target="#only-relative-differences-matter-stacked-100-area-chart">Only Relative Differences Matter: Stacked 100% Area Chart</a></li>
+  <li><a href="#relative-and-absolute-differences-matter-stacked-area-chart" id="toc-relative-and-absolute-differences-matter-stacked-area-chart" class="nav-link" data-scroll-target="#relative-and-absolute-differences-matter-stacked-area-chart">Relative and Absolute Differences Matter: Stacked Area Chart</a></li>
+  </ul>
+</li>
+  </ul>
+</li>
+  <li>
+<a href="#static-1" id="toc-static-1" class="nav-link" data-scroll-target="#static-1">Static</a>
+  <ul>
+<li><a href="#simple-share-of-total-pie-chart" id="toc-simple-share-of-total-pie-chart" class="nav-link" data-scroll-target="#simple-share-of-total-pie-chart">Simple Share of Total: Pie Chart</a></li>
+  <li><a href="#accumulation-or-subtraction-to-total-waterfall-chart" id="toc-accumulation-or-subtraction-to-total-waterfall-chart" class="nav-link" data-scroll-target="#accumulation-or-subtraction-to-total-waterfall-chart">Accumulation or Subtraction to Total: Waterfall Chart</a></li>
+  <li><a href="#components-of-components-stacked-100-column-chart-with-subcomponents" id="toc-components-of-components-stacked-100-column-chart-with-subcomponents" class="nav-link" data-scroll-target="#components-of-components-stacked-100-column-chart-with-subcomponents">Components of Components: Stacked 100% Column Chart With Subcomponents</a></li>
+  </ul>
+</li>
+  </ul>
+</li>
+  <li>
+<a href="#relationship" id="toc-relationship" class="nav-link" data-scroll-target="#relationship">Relationship</a>
+  <ul>
+<li><a href="#two-variables-scatter-chart-1" id="toc-two-variables-scatter-chart-1" class="nav-link" data-scroll-target="#two-variables-scatter-chart-1">Two Variables: Scatter Chart</a></li>
+  <li><a href="#three-variables-bubble-chart" id="toc-three-variables-bubble-chart" class="nav-link" data-scroll-target="#three-variables-bubble-chart">Three Variables: Bubble Chart</a></li>
   <li><a href="#histograms" id="toc-histograms" class="nav-link" data-scroll-target="#histograms">Histograms</a></li>
   <li><a href="#boxplots" id="toc-boxplots" class="nav-link" data-scroll-target="#boxplots">Boxplots</a></li>
   <li><a href="#density" id="toc-density" class="nav-link" data-scroll-target="#density">Density</a></li>
@@ -177,6 +265,8 @@ div.csl-indent {
 </li>
   <li><a href="#license" id="toc-license" class="nav-link" data-scroll-target="#license">License</a></li>
   <li><a href="#references" id="toc-references" class="nav-link" data-scroll-target="#references">References</a></li>
+  </ul>
+</li>
   </ul><div class="toc-actions"><ul><li><a href="https://github.com/marciopizzonia/visual-style/edit/main/index.qmd" class="toc-action"><i class="bi bi-github"></i>Edit this page</a></li><li><a href="https://github.com/marciopizzonia/visual-style/blob/main/index.qmd" class="toc-action"><i class="bi empty"></i>View source</a></li><li><a href="https://github.com/marciopizzonia/visual-style/issues/" class="toc-action"><i class="bi empty"></i>Report an issue</a></li></ul></div></nav>
     </div>
 <!-- main -->
@@ -198,7 +288,7 @@ div.csl-indent {
     <div>
     <div class="quarto-title-meta-heading">Published</div>
     <div class="quarto-title-meta-contents">
-      <p class="date">June 15, 2026</p>
+      <p class="date">June 21, 2026</p>
     </div>
   </div>
   
@@ -208,9 +298,11 @@ div.csl-indent {
 
 
 </header><!-- badges: start --><p><a href="https://www.repostatus.org/#wip"><img src="https://www.repostatus.org/badges/latest/wip.svg" class="img-fluid" alt="Project Status: WIP – Initial development is in progress, but there has not yet been a stable, usable release suitable for the public."></a> <a href="https://www.gnu.org/licenses/gpl-3.0"><img src="https://img.shields.io/badge/license-GPLv3-bd0000.svg" class="img-fluid" alt="License: GPLv3"></a> <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/"><img src="https://img.shields.io/badge/license-CC_BY--NC--SA_4.0-lightgrey.svg" class="img-fluid" alt="License: CC BY-NC-SA 4.0"></a> <a href="https://www.contributor-covenant.org/version/3/0/code_of_conduct/"><img src="https://img.shields.io/badge/Contributor%20Covenant-3.0-4baaaa.svg" class="img-fluid" alt="Contributor Covenant 3.0 code of conduct badge"></a> <!-- badges: end --></p>
-<section id="overview" class="level2"><h2 class="anchored" data-anchor-id="overview">Overview</h2>
-</section><section id="brand.yml-configuration" class="level2"><h2 class="anchored" data-anchor-id="brand.yml-configuration">
-<code>brand.yml</code> Configuration</h2>
+<section id="overview" class="level1"><h1>Overview</h1>
+<p>This repository showcases the visual style of the projects I aim to develop for educational purposes. Furthermore, it serves as a learning resource for my personal development and demonstrates the application of the <a href="https://posit-dev.github.io/brand-yml/"><code>brand.yml</code></a> configuration.</p>
+<p>The report is available <a href="https://github.com/marciopizzonia/visual-style">here</a>.</p>
+</section><section id="brand.yml-configuration" class="level1"><h1>
+<code>_brand.yml</code> Configuration</h1>
 <!-- %:::% brand.yml begin %:::% -->
 <div class="code-with-filename">
 <div class="code-with-filename-file">
@@ -294,8 +386,8 @@ div.csl-indent {
 <span id="cb1-76"><a href="#cb1-76" aria-hidden="true" tabindex="-1"></a><span class="at">    </span><span class="fu">decoration</span><span class="kw">:</span><span class="at"> none</span></span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 </div>
 <!-- %:::% brand.yml end %:::% -->
-</section><section id="set-the-environment" class="level2"><h2 class="anchored" data-anchor-id="set-the-environment">Set the Environment</h2>
-<section id="load-packages" class="level3"><h3 class="anchored" data-anchor-id="load-packages">Load Packages</h3>
+</section><section id="set-the-environment" class="level1"><h1>Set the Environment</h1>
+<section id="load-packages" class="level2"><h2 class="anchored" data-anchor-id="load-packages">Load Packages</h2>
 <div class="cell">
 <div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb2"><pre class="downlit sourceCode r code-with-copy"><code class="sourceCode R"><span><span class="kw"><a href="https://rdrr.io/r/base/library.html">library</a></span><span class="op">(</span><span class="va"><a href="https://danielvartan.github.io/brandr/">brandr</a></span><span class="op">)</span></span>
 <span><span class="kw"><a href="https://rdrr.io/r/base/library.html">library</a></span><span class="op">(</span><span class="va"><a href="https://dplyr.tidyverse.org">dplyr</a></span><span class="op">)</span></span>
@@ -308,7 +400,41 @@ div.csl-indent {
 <span><span class="kw"><a href="https://rdrr.io/r/base/library.html">library</a></span><span class="op">(</span><span class="va"><a href="https://r-spatial.github.io/sf/">sf</a></span><span class="op">)</span></span>
 <span><span class="kw"><a href="https://rdrr.io/r/base/library.html">library</a></span><span class="op">(</span><span class="va"><a href="https://tidyr.tidyverse.org">tidyr</a></span><span class="op">)</span></span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 </div>
-</section></section><section id="bar-plots" class="level2"><h2 class="anchored" data-anchor-id="bar-plots">Bar Plots</h2>
+</section></section><section id="comparison" class="level1"><h1>Comparison</h1>
+<section id="static" class="level2"><h2 class="anchored" data-anchor-id="static">Static</h2>
+<section id="one-variable-single-bar-chart" class="level3"><h3 class="anchored" data-anchor-id="one-variable-single-bar-chart">One Variable: Single Bar Chart</h3>
+</section><section id="two-variables-viariable-widht-column-chart" class="level3"><h3 class="anchored" data-anchor-id="two-variables-viariable-widht-column-chart">Two Variables: Viariable Widht Column Chart</h3>
+</section><section id="three-or-more-variables" class="level3"><h3 class="anchored" data-anchor-id="three-or-more-variables">Three or More Variables</h3>
+<section id="few-items-multiple-bar-charts" class="level4"><h4 class="anchored" data-anchor-id="few-items-multiple-bar-charts">Few Items: Multiple Bar Charts</h4>
+</section><section id="many-items-table-with-embedded-charts" class="level4"><h4 class="anchored" data-anchor-id="many-items-table-with-embedded-charts">Many Items: Table With Embedded Charts</h4>
+</section></section></section><section id="changing-over-time" class="level2"><h2 class="anchored" data-anchor-id="changing-over-time">Changing Over Time</h2>
+<section id="many-periods" class="level3"><h3 class="anchored" data-anchor-id="many-periods">Many Periods</h3>
+<section id="cyclical-data-circular-area-chart" class="level4"><h4 class="anchored" data-anchor-id="cyclical-data-circular-area-chart">Cyclical Data: Circular Area Chart</h4>
+</section><section id="noncyclical-data-line-chart" class="level4"><h4 class="anchored" data-anchor-id="noncyclical-data-line-chart">Noncyclical Data: Line Chart</h4>
+</section></section><section id="few-periods" class="level3"><h3 class="anchored" data-anchor-id="few-periods">Few Periods</h3>
+<section id="single-or-few-items-column-chart" class="level4"><h4 class="anchored" data-anchor-id="single-or-few-items-column-chart">Single or Few Items: Column Chart</h4>
+</section><section id="many-items-line-chart" class="level4"><h4 class="anchored" data-anchor-id="many-items-line-chart">Many Items: Line Chart</h4>
+</section></section></section></section><section id="distribution" class="level1"><h1>Distribution</h1>
+<section id="single-variable" class="level2"><h2 class="anchored" data-anchor-id="single-variable">Single Variable</h2>
+<section id="few-items-column-histogram" class="level3"><h3 class="anchored" data-anchor-id="few-items-column-histogram">Few Items: Column Histogram</h3>
+</section><section id="many-items-line-histogram" class="level3"><h3 class="anchored" data-anchor-id="many-items-line-histogram">Many Items: Line Histogram</h3>
+</section></section><section id="two-variables-scatter-chart" class="level2"><h2 class="anchored" data-anchor-id="two-variables-scatter-chart">Two Variables: Scatter Chart</h2>
+</section><section id="three-variables-3d-area-chart" class="level2"><h2 class="anchored" data-anchor-id="three-variables-3d-area-chart">Three Variables: 3D Area Chart</h2>
+</section></section><section id="composition" class="level1"><h1>Composition</h1>
+<section id="changin-over-time" class="level2"><h2 class="anchored" data-anchor-id="changin-over-time">Changin Over Time</h2>
+<section id="few-periods-1" class="level3"><h3 class="anchored" data-anchor-id="few-periods-1">Few Periods</h3>
+<section id="only-relative-differences-matter-stacked-100-column-chart" class="level4"><h4 class="anchored" data-anchor-id="only-relative-differences-matter-stacked-100-column-chart">Only Relative Differences Matter: Stacked 100% Column Chart</h4>
+</section><section id="relative-and-absolute-differences-matter-stacked-column-chart" class="level4"><h4 class="anchored" data-anchor-id="relative-and-absolute-differences-matter-stacked-column-chart">Relative and Absolute Differences Matter: Stacked Column Chart</h4>
+</section></section><section id="many-periods-1" class="level3"><h3 class="anchored" data-anchor-id="many-periods-1">Many Periods</h3>
+<section id="only-relative-differences-matter-stacked-100-area-chart" class="level4"><h4 class="anchored" data-anchor-id="only-relative-differences-matter-stacked-100-area-chart">Only Relative Differences Matter: Stacked 100% Area Chart</h4>
+</section><section id="relative-and-absolute-differences-matter-stacked-area-chart" class="level4"><h4 class="anchored" data-anchor-id="relative-and-absolute-differences-matter-stacked-area-chart">Relative and Absolute Differences Matter: Stacked Area Chart</h4>
+</section></section></section><section id="static-1" class="level2"><h2 class="anchored" data-anchor-id="static-1">Static</h2>
+<section id="simple-share-of-total-pie-chart" class="level3"><h3 class="anchored" data-anchor-id="simple-share-of-total-pie-chart">Simple Share of Total: Pie Chart</h3>
+</section><section id="accumulation-or-subtraction-to-total-waterfall-chart" class="level3"><h3 class="anchored" data-anchor-id="accumulation-or-subtraction-to-total-waterfall-chart">Accumulation or Subtraction to Total: Waterfall Chart</h3>
+</section><section id="components-of-components-stacked-100-column-chart-with-subcomponents" class="level3"><h3 class="anchored" data-anchor-id="components-of-components-stacked-100-column-chart-with-subcomponents">Components of Components: Stacked 100% Column Chart With Subcomponents</h3>
+</section></section></section><section id="relationship" class="level1"><h1>Relationship</h1>
+<section id="two-variables-scatter-chart-1" class="level2"><h2 class="anchored" data-anchor-id="two-variables-scatter-chart-1">Two Variables: Scatter Chart</h2>
+</section><section id="three-variables-bubble-chart" class="level2"><h2 class="anchored" data-anchor-id="three-variables-bubble-chart">Three Variables: Bubble Chart</h2>
 <div class="cell">
 <details class="code-fold"><summary>Code</summary><div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb3"><pre class="downlit sourceCode r code-with-copy"><code class="sourceCode R"><span><span class="va">penguins</span> <span class="op">|&gt;</span></span>
 <span>  <span class="fu"><a href="https://ggplot2.tidyverse.org/reference/ggplot.html">ggplot</a></span><span class="op">(</span></span>
@@ -581,7 +707,7 @@ Wilkinson, L. (2005). <em>The grammar of graphics</em> (J. Chambers, D. Hand, &a
 </div>
 
 
-</section></main><!-- /main --><script id="quarto-html-after-body" type="application/javascript">
+</section></section></main><!-- /main --><script id="quarto-html-after-body" type="application/javascript">
   window.document.addEventListener("DOMContentLoaded", function (event) {
     const icon = "";
     const anchorJS = new window.AnchorJS();
