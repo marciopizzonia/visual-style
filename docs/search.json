@@ -7,102 +7,74 @@
     "text": "Load Packages\n\nlibrary(brandr)\nlibrary(dplyr)\nlibrary(geobr)\nlibrary(ggplot2)\nlibrary(ggspatial)\nlibrary(here)\nlibrary(htmltools)\nlibrary(palmerpenguins)\nlibrary(sf)\nlibrary(tidyr)"
   },
   {
-    "objectID": "index.html#static",
-    "href": "index.html#static",
+    "objectID": "index.html#comparison",
+    "href": "index.html#comparison",
     "title": "Visual Style for Pizzonia’s Personal Study Project (PPSP)",
-    "section": "Static",
-    "text": "Static\nOne Variable: Single Bar Chart\nTwo Variables: Viariable Widht Column Chart\nThree or More Variables\nFew Items: Multiple Bar Charts\nMany Items: Table With Embedded Charts"
+    "section": "Comparison",
+    "text": "Comparison\nStatic\nOne Variable: Single Bar Chart\nTwo Variables: Viariable Widht Column Chart\nThree or More Variables\nFew Items: Multiple Bar Charts\nMany Items: Table With Embedded Charts\nChanging Over Time\nMany Periods\nCyclical Data: Circular Area Chart\nNoncyclical Data: Line Chart\nFew Periods\nSingle or Few Items: Column Chart\nMany Items: Line Chart"
   },
   {
-    "objectID": "index.html#changing-over-time",
-    "href": "index.html#changing-over-time",
+    "objectID": "index.html#distribution",
+    "href": "index.html#distribution",
     "title": "Visual Style for Pizzonia’s Personal Study Project (PPSP)",
-    "section": "Changing Over Time",
-    "text": "Changing Over Time\nMany Periods\nCyclical Data: Circular Area Chart\nNoncyclical Data: Line Chart\nFew Periods\nSingle or Few Items: Column Chart\nMany Items: Line Chart"
+    "section": "Distribution",
+    "text": "Distribution\nSingle Variable\nFew Items: Column Histogram\nMany Items: Line Histogram\nTwo Variables: Scatter Chart\nThree Variables: 3D Area Chart"
   },
   {
-    "objectID": "index.html#single-variable",
-    "href": "index.html#single-variable",
+    "objectID": "index.html#composition",
+    "href": "index.html#composition",
     "title": "Visual Style for Pizzonia’s Personal Study Project (PPSP)",
-    "section": "Single Variable",
-    "text": "Single Variable\nFew Items: Column Histogram\nMany Items: Line Histogram"
+    "section": "Composition",
+    "text": "Composition\nChangin Over Time\nFew Periods\nOnly Relative Differences Matter: Stacked 100% Column Chart\nRelative and Absolute Differences Matter: Stacked Column Chart\nMany Periods\nOnly Relative Differences Matter: Stacked 100% Area Chart\nRelative and Absolute Differences Matter: Stacked Area Chart\nStatic\nSimple Share of Total: Pie Chart\nAccumulation or Subtraction to Total: Waterfall Chart\nComponents of Components: Stacked 100% Column Chart With Subcomponents"
   },
   {
-    "objectID": "index.html#two-variables-scatter-chart",
-    "href": "index.html#two-variables-scatter-chart",
+    "objectID": "index.html#relationship",
+    "href": "index.html#relationship",
     "title": "Visual Style for Pizzonia’s Personal Study Project (PPSP)",
-    "section": "Two Variables: Scatter Chart",
-    "text": "Two Variables: Scatter Chart"
+    "section": "Relationship",
+    "text": "Relationship\nTwo Variables: Scatter Chart\nThree Variables: Bubble Chart"
   },
   {
-    "objectID": "index.html#three-variables-3d-area-chart",
-    "href": "index.html#three-variables-3d-area-chart",
+    "objectID": "index.html#distribution-1",
+    "href": "index.html#distribution-1",
     "title": "Visual Style for Pizzonia’s Personal Study Project (PPSP)",
-    "section": "Three Variables: 3D Area Chart",
-    "text": "Three Variables: 3D Area Chart"
+    "section": "Distribution",
+    "text": "Distribution\nDiscrete: Dot Map\n1 dot = 1 unit\nContinuous: Heatmap\nColor = Density"
   },
   {
-    "objectID": "index.html#changin-over-time",
-    "href": "index.html#changin-over-time",
+    "objectID": "index.html#quantity",
+    "href": "index.html#quantity",
     "title": "Visual Style for Pizzonia’s Personal Study Project (PPSP)",
-    "section": "Changin Over Time",
-    "text": "Changin Over Time\nFew Periods\nOnly Relative Differences Matter: Stacked 100% Column Chart\nRelative and Absolute Differences Matter: Stacked Column Chart\nMany Periods\nOnly Relative Differences Matter: Stacked 100% Area Chart\nRelative and Absolute Differences Matter: Stacked Area Chart"
+    "section": "Quantity",
+    "text": "Quantity\nBy Region: Choropleth\nColor = Intenisty\nBy Point: Proportional Symbol\nSize = Value"
   },
   {
-    "objectID": "index.html#static-1",
-    "href": "index.html#static-1",
+    "objectID": "index.html#location",
+    "href": "index.html#location",
     "title": "Visual Style for Pizzonia’s Personal Study Project (PPSP)",
-    "section": "Static",
-    "text": "Static\nSimple Share of Total: Pie Chart\nAccumulation or Subtraction to Total: Waterfall Chart\nComponents of Components: Stacked 100% Column Chart With Subcomponents"
+    "section": "Location",
+    "text": "Location\nSimple: Marker Map\nPin = 1 Place\nCategorical: Categorical Icons\n1 icon = category"
   },
   {
-    "objectID": "index.html#two-variables-scatter-chart-1",
-    "href": "index.html#two-variables-scatter-chart-1",
+    "objectID": "index.html#flow",
+    "href": "index.html#flow",
     "title": "Visual Style for Pizzonia’s Personal Study Project (PPSP)",
-    "section": "Two Variables: Scatter Chart",
-    "text": "Two Variables: Scatter Chart"
+    "section": "Flow",
+    "text": "Flow\nOrigin to Destination: Flow Map\nWidth = Volume\nContinuous: Route Track\nGPS/Rout Path"
   },
   {
-    "objectID": "index.html#three-variables-bubble-chart",
-    "href": "index.html#three-variables-bubble-chart",
+    "objectID": "index.html#comparsion",
+    "href": "index.html#comparsion",
     "title": "Visual Style for Pizzonia’s Personal Study Project (PPSP)",
-    "section": "Three Variables: Bubble Chart",
-    "text": "Three Variables: Bubble Chart\n\nCodepenguins |&gt;\n  ggplot(\n    aes(\n      x = sex,\n      fill = species\n    )\n  ) +\n  geom_bar(alpha = 0.8) +\n  facet_wrap(vars(species), ncol = 1) +\n  scale_fill_brand_d() +\n  coord_flip() +\n  labs(\n    x = \"Island\",\n    y = \"Frequency\",\n    fill = \"Species\"\n  )"
+    "section": "Comparsion",
+    "text": "Comparsion\nDistortion: Cartogram\nPropotional area to the value\nKeep Shape: Isochrone\nTime Rings"
   },
   {
-    "objectID": "index.html#histograms",
-    "href": "index.html#histograms",
+    "objectID": "index.html#special-cases-combinations",
+    "href": "index.html#special-cases-combinations",
     "title": "Visual Style for Pizzonia’s Personal Study Project (PPSP)",
-    "section": "Histograms",
-    "text": "Histograms\n\nCodepenguins |&gt;\n  drop_na(\n    flipper_length_mm,\n    species\n  ) |&gt;\n  ggplot(\n    aes(\n      x = flipper_length_mm,\n      fill = species\n    )\n  ) +\n  geom_histogram(\n    bins = 30,\n    alpha = 0.5,\n    position = \"identity\"\n  ) +\n  scale_fill_brand_d() +\n  labs(\n    x = \"Flipper Length (mm)\",\n    y = \"Frequency\",\n    fill = \"Species\"\n  )"
-  },
-  {
-    "objectID": "index.html#boxplots",
-    "href": "index.html#boxplots",
-    "title": "Visual Style for Pizzonia’s Personal Study Project (PPSP)",
-    "section": "Boxplots",
-    "text": "Boxplots\n\nCodepenguins |&gt;\n  drop_na(\n    bill_length_mm,\n    species\n  ) |&gt;\n  ggplot(\n    aes(\n      x = species,\n      y = bill_length_mm,\n      fill = species\n    )\n  ) +\n  geom_boxplot(\n    outlier.color = get_brand_color(\"dark-red\")\n  ) +\n  geom_jitter(\n    width = 0.2,\n    alpha = 0.1\n  ) +\n  scale_fill_brand_d(alpha = 0.7) +\n  labs(\n    x = \"Species\",\n    y = \"Bill Length (mm)\",\n    fill = \"Species\"\n  )"
-  },
-  {
-    "objectID": "index.html#density",
-    "href": "index.html#density",
-    "title": "Visual Style for Pizzonia’s Personal Study Project (PPSP)",
-    "section": "Density",
-    "text": "Density\n\nCodepenguins |&gt;\n  drop_na(\n    flipper_length_mm,\n    species\n  ) |&gt;\n  ggplot(\n    aes(\n      x = flipper_length_mm,\n      fill = species\n    )\n  ) +\n  geom_density(\n    alpha = 0.5,\n    position = \"identity\"\n  ) +\n  scale_fill_brand_d() +\n  labs(\n    x = \"Flipper Length (mm)\",\n    y = \"Density\",\n    fill = \"Species\"\n  ) +\n  theme(\n    legend.position = \"none\"\n  )"
-  },
-  {
-    "objectID": "index.html#scatterplots",
-    "href": "index.html#scatterplots",
-    "title": "Visual Style for Pizzonia’s Personal Study Project (PPSP)",
-    "section": "Scatterplots",
-    "text": "Scatterplots\n\nCodepenguins |&gt;\n  drop_na(\n    body_mass_g,\n    flipper_length_mm,\n    species\n  ) |&gt;\n  ggplot(\n    aes(\n      x = body_mass_g,\n      y = flipper_length_mm,\n      color = species,\n      shape = species\n    )\n  ) +\n  geom_point(size = 2) +\n  geom_smooth(\n    method = \"lm\",\n    formula = y ~ x,\n    se = FALSE\n  ) +\n  scale_color_brand_d(alpha = 0.7) +\n  labs(\n    x = \"Body Mass (g)\",\n    y = \"Flipper Length (mm)\",\n    color = \"Species\",\n    shape = \"Species\"\n  )"
-  },
-  {
-    "objectID": "index.html#maps",
-    "href": "index.html#maps",
-    "title": "Visual Style for Pizzonia’s Personal Study Project (PPSP)",
-    "section": "Maps",
-    "text": "Maps\n\nCodebrazil_states &lt;- read_state(year = 2024)\n\n\n\nCodedata &lt;-\n  brazil_states |&gt;\n  mutate(\n    n = sample(\n      1:1000,\n      size = n(),\n      replace = TRUE\n    ),\n  )\n\n\n\nCodeplot &lt;-\n  data |&gt;\n  ggplot() +\n  geom_sf(\n    aes(fill = n),\n    color = get_brand_color(\"gray\")\n  ) +\n  scale_fill_brand_b(\n    n.breaks = 6\n  ) +\n  labs(fill = NULL) +\n  annotation_scale(\n    location = \"br\",\n    style = \"tick\",\n    width_hint = 0.25,\n    height = unit(0.15, \"cm\")\n  ) +\n  annotation_north_arrow(\n    location = \"br\",\n    height = unit(2, \"lines\"),\n    width = unit(2, \"lines\"),\n    pad_x = unit(0.25, \"lines\"),\n    pad_y = unit(1.25, \"lines\"),\n    style = north_arrow_fancy_orienteering\n  )\n\n\nContinuous\n\nCodeplot\n#&gt; Scale on map varies by more than 10%, scale bar may be inaccurate\n\n\n\n\n\n\n\nDiverging\n\nCodeplot +\n  scale_fill_brand_b(\n    color_type = \"div\",\n    n.breaks = 6\n  )\n#&gt; Scale for fill is already present.\n#&gt; Adding another scale for fill, which will replace the existing scale.\n#&gt; Scale on map varies by more than 10%, scale bar may be inaccurate"
+    "section": "Special Cases & Combinations",
+    "text": "Special Cases & Combinations\nMultiple Variables: Bivariant Map or Combined Map\nTerrain/Relief: Hillshade/Contour/3D\nNetwork/Connection: Geospatial Map (node-link map)\nTemporal Data: Animated Map"
   },
   {
     "objectID": "index.html#license",

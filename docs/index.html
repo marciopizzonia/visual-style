@@ -95,10 +95,7 @@ div.csl-indent {
 <link href="site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
 <link href="site_libs/bootstrap/bootstrap-358abd07d2e56d395d22ff659b691269.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme" id="quarto-bootstrap" data-mode="light">
 <link href="site_libs/bootstrap/bootstrap-dark-7cdb021aa1db5acc9c2660ecf9dc9631.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme quarto-color-alternate" id="quarto-bootstrap" data-mode="light">
-<link href="site_libs/bootstrap/bootstrap-358abd07d2e56d395d22ff659b691269.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme-extra" id="quarto-bootstrap" data-mode="light">
-<script src="site_libs/quarto-contrib/glightbox/glightbox.min.js"></script>
-<link href="site_libs/quarto-contrib/glightbox/glightbox.min.css" rel="stylesheet">
-<link href="site_libs/quarto-contrib/glightbox/lightbox.css" rel="stylesheet"><script id="quarto-search-options" type="application/json">{
+<link href="site_libs/bootstrap/bootstrap-358abd07d2e56d395d22ff659b691269.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme-extra" id="quarto-bootstrap" data-mode="light"><script id="quarto-search-options" type="application/json">{
   "language": {
     "search-no-results-text": "No results",
     "search-matching-documents-text": "matching documents",
@@ -164,11 +161,14 @@ div.csl-indent {
   </ul>
 </li>
   <li>
+<a href="#charts" id="toc-charts" class="nav-link" data-scroll-target="#charts">Charts</a>
+  <ul>
+<li>
 <a href="#comparison" id="toc-comparison" class="nav-link" data-scroll-target="#comparison">Comparison</a>
   <ul>
 <li>
 <a href="#static" id="toc-static" class="nav-link" data-scroll-target="#static">Static</a>
-  <ul>
+  <ul class="collapse">
 <li><a href="#one-variable-single-bar-chart" id="toc-one-variable-single-bar-chart" class="nav-link" data-scroll-target="#one-variable-single-bar-chart">One Variable: Single Bar Chart</a></li>
   <li><a href="#two-variables-viariable-widht-column-chart" id="toc-two-variables-viariable-widht-column-chart" class="nav-link" data-scroll-target="#two-variables-viariable-widht-column-chart">Two Variables: Viariable Widht Column Chart</a></li>
   <li>
@@ -182,7 +182,7 @@ div.csl-indent {
 </li>
   <li>
 <a href="#changing-over-time" id="toc-changing-over-time" class="nav-link" data-scroll-target="#changing-over-time">Changing Over Time</a>
-  <ul>
+  <ul class="collapse">
 <li>
 <a href="#many-periods" id="toc-many-periods" class="nav-link" data-scroll-target="#many-periods">Many Periods</a>
   <ul class="collapse">
@@ -206,7 +206,7 @@ div.csl-indent {
   <ul>
 <li>
 <a href="#single-variable" id="toc-single-variable" class="nav-link" data-scroll-target="#single-variable">Single Variable</a>
-  <ul>
+  <ul class="collapse">
 <li><a href="#few-items-column-histogram" id="toc-few-items-column-histogram" class="nav-link" data-scroll-target="#few-items-column-histogram">Few Items: Column Histogram</a></li>
   <li><a href="#many-items-line-histogram" id="toc-many-items-line-histogram" class="nav-link" data-scroll-target="#many-items-line-histogram">Many Items: Line Histogram</a></li>
   </ul>
@@ -220,7 +220,7 @@ div.csl-indent {
   <ul>
 <li>
 <a href="#changin-over-time" id="toc-changin-over-time" class="nav-link" data-scroll-target="#changin-over-time">Changin Over Time</a>
-  <ul>
+  <ul class="collapse">
 <li>
 <a href="#few-periods-1" id="toc-few-periods-1" class="nav-link" data-scroll-target="#few-periods-1">Few Periods</a>
   <ul class="collapse">
@@ -239,7 +239,7 @@ div.csl-indent {
 </li>
   <li>
 <a href="#static-1" id="toc-static-1" class="nav-link" data-scroll-target="#static-1">Static</a>
-  <ul>
+  <ul class="collapse">
 <li><a href="#simple-share-of-total-pie-chart" id="toc-simple-share-of-total-pie-chart" class="nav-link" data-scroll-target="#simple-share-of-total-pie-chart">Simple Share of Total: Pie Chart</a></li>
   <li><a href="#accumulation-or-subtraction-to-total-waterfall-chart" id="toc-accumulation-or-subtraction-to-total-waterfall-chart" class="nav-link" data-scroll-target="#accumulation-or-subtraction-to-total-waterfall-chart">Accumulation or Subtraction to Total: Waterfall Chart</a></li>
   <li><a href="#components-of-components-stacked-100-column-chart-with-subcomponents" id="toc-components-of-components-stacked-100-column-chart-with-subcomponents" class="nav-link" data-scroll-target="#components-of-components-stacked-100-column-chart-with-subcomponents">Components of Components: Stacked 100% Column Chart With Subcomponents</a></li>
@@ -252,15 +252,55 @@ div.csl-indent {
   <ul>
 <li><a href="#two-variables-scatter-chart-1" id="toc-two-variables-scatter-chart-1" class="nav-link" data-scroll-target="#two-variables-scatter-chart-1">Two Variables: Scatter Chart</a></li>
   <li><a href="#three-variables-bubble-chart" id="toc-three-variables-bubble-chart" class="nav-link" data-scroll-target="#three-variables-bubble-chart">Three Variables: Bubble Chart</a></li>
-  <li><a href="#histograms" id="toc-histograms" class="nav-link" data-scroll-target="#histograms">Histograms</a></li>
-  <li><a href="#boxplots" id="toc-boxplots" class="nav-link" data-scroll-target="#boxplots">Boxplots</a></li>
-  <li><a href="#density" id="toc-density" class="nav-link" data-scroll-target="#density">Density</a></li>
-  <li><a href="#scatterplots" id="toc-scatterplots" class="nav-link" data-scroll-target="#scatterplots">Scatterplots</a></li>
+  </ul>
+</li>
+  </ul>
+</li>
   <li>
 <a href="#maps" id="toc-maps" class="nav-link" data-scroll-target="#maps">Maps</a>
   <ul>
-<li><a href="#continuous" id="toc-continuous" class="nav-link" data-scroll-target="#continuous">Continuous</a></li>
-  <li><a href="#diverging" id="toc-diverging" class="nav-link" data-scroll-target="#diverging">Diverging</a></li>
+<li>
+<a href="#distribution-1" id="toc-distribution-1" class="nav-link" data-scroll-target="#distribution-1">Distribution</a>
+  <ul>
+<li><a href="#discrete-dot-map" id="toc-discrete-dot-map" class="nav-link" data-scroll-target="#discrete-dot-map">Discrete: Dot Map</a></li>
+  <li><a href="#continuous-heatmap" id="toc-continuous-heatmap" class="nav-link" data-scroll-target="#continuous-heatmap">Continuous: Heatmap</a></li>
+  </ul>
+</li>
+  <li>
+<a href="#quantity" id="toc-quantity" class="nav-link" data-scroll-target="#quantity">Quantity</a>
+  <ul>
+<li><a href="#by-region-choropleth" id="toc-by-region-choropleth" class="nav-link" data-scroll-target="#by-region-choropleth">By Region: Choropleth</a></li>
+  <li><a href="#by-point-proportional-symbol" id="toc-by-point-proportional-symbol" class="nav-link" data-scroll-target="#by-point-proportional-symbol">By Point: Proportional Symbol</a></li>
+  </ul>
+</li>
+  <li>
+<a href="#location" id="toc-location" class="nav-link" data-scroll-target="#location">Location</a>
+  <ul>
+<li><a href="#simple-marker-map" id="toc-simple-marker-map" class="nav-link" data-scroll-target="#simple-marker-map">Simple: Marker Map</a></li>
+  <li><a href="#categorical-categorical-icons" id="toc-categorical-categorical-icons" class="nav-link" data-scroll-target="#categorical-categorical-icons">Categorical: Categorical Icons</a></li>
+  </ul>
+</li>
+  <li>
+<a href="#flow" id="toc-flow" class="nav-link" data-scroll-target="#flow">Flow</a>
+  <ul>
+<li><a href="#origin-to-destination-flow-map" id="toc-origin-to-destination-flow-map" class="nav-link" data-scroll-target="#origin-to-destination-flow-map">Origin to Destination: Flow Map</a></li>
+  <li><a href="#continuous-route-track" id="toc-continuous-route-track" class="nav-link" data-scroll-target="#continuous-route-track">Continuous: Route Track</a></li>
+  </ul>
+</li>
+  <li>
+<a href="#comparsion" id="toc-comparsion" class="nav-link" data-scroll-target="#comparsion">Comparsion</a>
+  <ul>
+<li><a href="#distortion-cartogram" id="toc-distortion-cartogram" class="nav-link" data-scroll-target="#distortion-cartogram">Distortion: Cartogram</a></li>
+  <li><a href="#keep-shape-isochrone" id="toc-keep-shape-isochrone" class="nav-link" data-scroll-target="#keep-shape-isochrone">Keep Shape: Isochrone</a></li>
+  </ul>
+</li>
+  <li>
+<a href="#special-cases-combinations" id="toc-special-cases-combinations" class="nav-link" data-scroll-target="#special-cases-combinations">Special Cases &amp; Combinations</a>
+  <ul>
+<li><a href="#multiple-variables-bivariant-map-or-combined-map" id="toc-multiple-variables-bivariant-map-or-combined-map" class="nav-link" data-scroll-target="#multiple-variables-bivariant-map-or-combined-map">Multiple Variables: Bivariant Map or Combined Map</a></li>
+  <li><a href="#terrainrelief-hillshadecontour3d" id="toc-terrainrelief-hillshadecontour3d" class="nav-link" data-scroll-target="#terrainrelief-hillshadecontour3d">Terrain/Relief: Hillshade/Contour/3D</a></li>
+  <li><a href="#networkconnection-geospatial-map-node-link-map" id="toc-networkconnection-geospatial-map-node-link-map" class="nav-link" data-scroll-target="#networkconnection-geospatial-map-node-link-map">Network/Connection: Geospatial Map (node-link map)</a></li>
+  <li><a href="#temporal-data-animated-map" id="toc-temporal-data-animated-map" class="nav-link" data-scroll-target="#temporal-data-animated-map">Temporal Data: Animated Map</a></li>
   </ul>
 </li>
   <li><a href="#license" id="toc-license" class="nav-link" data-scroll-target="#license">License</a></li>
@@ -400,272 +440,73 @@ div.csl-indent {
 <span><span class="kw"><a href="https://rdrr.io/r/base/library.html">library</a></span><span class="op">(</span><span class="va"><a href="https://r-spatial.github.io/sf/">sf</a></span><span class="op">)</span></span>
 <span><span class="kw"><a href="https://rdrr.io/r/base/library.html">library</a></span><span class="op">(</span><span class="va"><a href="https://tidyr.tidyverse.org">tidyr</a></span><span class="op">)</span></span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 </div>
-</section></section><section id="comparison" class="level1"><h1>Comparison</h1>
-<section id="static" class="level2"><h2 class="anchored" data-anchor-id="static">Static</h2>
-<section id="one-variable-single-bar-chart" class="level3"><h3 class="anchored" data-anchor-id="one-variable-single-bar-chart">One Variable: Single Bar Chart</h3>
-</section><section id="two-variables-viariable-widht-column-chart" class="level3"><h3 class="anchored" data-anchor-id="two-variables-viariable-widht-column-chart">Two Variables: Viariable Widht Column Chart</h3>
-</section><section id="three-or-more-variables" class="level3"><h3 class="anchored" data-anchor-id="three-or-more-variables">Three or More Variables</h3>
-<section id="few-items-multiple-bar-charts" class="level4"><h4 class="anchored" data-anchor-id="few-items-multiple-bar-charts">Few Items: Multiple Bar Charts</h4>
-</section><section id="many-items-table-with-embedded-charts" class="level4"><h4 class="anchored" data-anchor-id="many-items-table-with-embedded-charts">Many Items: Table With Embedded Charts</h4>
-</section></section></section><section id="changing-over-time" class="level2"><h2 class="anchored" data-anchor-id="changing-over-time">Changing Over Time</h2>
-<section id="many-periods" class="level3"><h3 class="anchored" data-anchor-id="many-periods">Many Periods</h3>
-<section id="cyclical-data-circular-area-chart" class="level4"><h4 class="anchored" data-anchor-id="cyclical-data-circular-area-chart">Cyclical Data: Circular Area Chart</h4>
-</section><section id="noncyclical-data-line-chart" class="level4"><h4 class="anchored" data-anchor-id="noncyclical-data-line-chart">Noncyclical Data: Line Chart</h4>
-</section></section><section id="few-periods" class="level3"><h3 class="anchored" data-anchor-id="few-periods">Few Periods</h3>
-<section id="single-or-few-items-column-chart" class="level4"><h4 class="anchored" data-anchor-id="single-or-few-items-column-chart">Single or Few Items: Column Chart</h4>
-</section><section id="many-items-line-chart" class="level4"><h4 class="anchored" data-anchor-id="many-items-line-chart">Many Items: Line Chart</h4>
-</section></section></section></section><section id="distribution" class="level1"><h1>Distribution</h1>
-<section id="single-variable" class="level2"><h2 class="anchored" data-anchor-id="single-variable">Single Variable</h2>
-<section id="few-items-column-histogram" class="level3"><h3 class="anchored" data-anchor-id="few-items-column-histogram">Few Items: Column Histogram</h3>
-</section><section id="many-items-line-histogram" class="level3"><h3 class="anchored" data-anchor-id="many-items-line-histogram">Many Items: Line Histogram</h3>
-</section></section><section id="two-variables-scatter-chart" class="level2"><h2 class="anchored" data-anchor-id="two-variables-scatter-chart">Two Variables: Scatter Chart</h2>
-</section><section id="three-variables-3d-area-chart" class="level2"><h2 class="anchored" data-anchor-id="three-variables-3d-area-chart">Three Variables: 3D Area Chart</h2>
-</section></section><section id="composition" class="level1"><h1>Composition</h1>
-<section id="changin-over-time" class="level2"><h2 class="anchored" data-anchor-id="changin-over-time">Changin Over Time</h2>
-<section id="few-periods-1" class="level3"><h3 class="anchored" data-anchor-id="few-periods-1">Few Periods</h3>
-<section id="only-relative-differences-matter-stacked-100-column-chart" class="level4"><h4 class="anchored" data-anchor-id="only-relative-differences-matter-stacked-100-column-chart">Only Relative Differences Matter: Stacked 100% Column Chart</h4>
-</section><section id="relative-and-absolute-differences-matter-stacked-column-chart" class="level4"><h4 class="anchored" data-anchor-id="relative-and-absolute-differences-matter-stacked-column-chart">Relative and Absolute Differences Matter: Stacked Column Chart</h4>
-</section></section><section id="many-periods-1" class="level3"><h3 class="anchored" data-anchor-id="many-periods-1">Many Periods</h3>
-<section id="only-relative-differences-matter-stacked-100-area-chart" class="level4"><h4 class="anchored" data-anchor-id="only-relative-differences-matter-stacked-100-area-chart">Only Relative Differences Matter: Stacked 100% Area Chart</h4>
-</section><section id="relative-and-absolute-differences-matter-stacked-area-chart" class="level4"><h4 class="anchored" data-anchor-id="relative-and-absolute-differences-matter-stacked-area-chart">Relative and Absolute Differences Matter: Stacked Area Chart</h4>
-</section></section></section><section id="static-1" class="level2"><h2 class="anchored" data-anchor-id="static-1">Static</h2>
-<section id="simple-share-of-total-pie-chart" class="level3"><h3 class="anchored" data-anchor-id="simple-share-of-total-pie-chart">Simple Share of Total: Pie Chart</h3>
-</section><section id="accumulation-or-subtraction-to-total-waterfall-chart" class="level3"><h3 class="anchored" data-anchor-id="accumulation-or-subtraction-to-total-waterfall-chart">Accumulation or Subtraction to Total: Waterfall Chart</h3>
-</section><section id="components-of-components-stacked-100-column-chart-with-subcomponents" class="level3"><h3 class="anchored" data-anchor-id="components-of-components-stacked-100-column-chart-with-subcomponents">Components of Components: Stacked 100% Column Chart With Subcomponents</h3>
-</section></section></section><section id="relationship" class="level1"><h1>Relationship</h1>
-<section id="two-variables-scatter-chart-1" class="level2"><h2 class="anchored" data-anchor-id="two-variables-scatter-chart-1">Two Variables: Scatter Chart</h2>
-</section><section id="three-variables-bubble-chart" class="level2"><h2 class="anchored" data-anchor-id="three-variables-bubble-chart">Three Variables: Bubble Chart</h2>
-<div class="cell">
-<details class="code-fold"><summary>Code</summary><div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb3"><pre class="downlit sourceCode r code-with-copy"><code class="sourceCode R"><span><span class="va">penguins</span> <span class="op">|&gt;</span></span>
-<span>  <span class="fu"><a href="https://ggplot2.tidyverse.org/reference/ggplot.html">ggplot</a></span><span class="op">(</span></span>
-<span>    <span class="fu"><a href="https://ggplot2.tidyverse.org/reference/aes.html">aes</a></span><span class="op">(</span></span>
-<span>      x <span class="op">=</span> <span class="va">sex</span>,</span>
-<span>      fill <span class="op">=</span> <span class="va">species</span></span>
-<span>    <span class="op">)</span></span>
-<span>  <span class="op">)</span> <span class="op">+</span></span>
-<span>  <span class="fu"><a href="https://ggplot2.tidyverse.org/reference/geom_bar.html">geom_bar</a></span><span class="op">(</span>alpha <span class="op">=</span> <span class="fl">0.8</span><span class="op">)</span> <span class="op">+</span></span>
-<span>  <span class="fu"><a href="https://ggplot2.tidyverse.org/reference/facet_wrap.html">facet_wrap</a></span><span class="op">(</span><span class="fu"><a href="https://dplyr.tidyverse.org/reference/vars.html">vars</a></span><span class="op">(</span><span class="va">species</span><span class="op">)</span>, ncol <span class="op">=</span> <span class="fl">1</span><span class="op">)</span> <span class="op">+</span></span>
-<span>  <span class="fu"><a href="https://danielvartan.github.io/brandr/reference/scale_brand.html">scale_fill_brand_d</a></span><span class="op">(</span><span class="op">)</span> <span class="op">+</span></span>
-<span>  <span class="fu"><a href="https://ggplot2.tidyverse.org/reference/coord_flip.html">coord_flip</a></span><span class="op">(</span><span class="op">)</span> <span class="op">+</span></span>
-<span>  <span class="fu"><a href="https://ggplot2.tidyverse.org/reference/labs.html">labs</a></span><span class="op">(</span></span>
-<span>    x <span class="op">=</span> <span class="st">"Island"</span>,</span>
-<span>    y <span class="op">=</span> <span class="st">"Frequency"</span>,</span>
-<span>    fill <span class="op">=</span> <span class="st">"Species"</span></span>
-<span>  <span class="op">)</span></span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
-</details><div class="cell-output-display">
-<div>
-<figure class="figure"><p><a href="index_files/figure-html/unnamed-chunk-2-1.png" class="lightbox" data-gallery="quarto-lightbox-gallery-1"><img src="index_files/figure-html/unnamed-chunk-2-1.png" class="img-fluid figure-img" width="672"></a></p>
-</figure>
-</div>
-</div>
-</div>
-</section><section id="histograms" class="level2"><h2 class="anchored" data-anchor-id="histograms">Histograms</h2>
-<div class="cell">
-<details class="code-fold"><summary>Code</summary><div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb4"><pre class="downlit sourceCode r code-with-copy"><code class="sourceCode R"><span><span class="va">penguins</span> <span class="op">|&gt;</span></span>
-<span>  <span class="fu"><a href="https://tidyr.tidyverse.org/reference/drop_na.html">drop_na</a></span><span class="op">(</span></span>
-<span>    <span class="va">flipper_length_mm</span>,</span>
-<span>    <span class="va">species</span></span>
-<span>  <span class="op">)</span> <span class="op">|&gt;</span></span>
-<span>  <span class="fu"><a href="https://ggplot2.tidyverse.org/reference/ggplot.html">ggplot</a></span><span class="op">(</span></span>
-<span>    <span class="fu"><a href="https://ggplot2.tidyverse.org/reference/aes.html">aes</a></span><span class="op">(</span></span>
-<span>      x <span class="op">=</span> <span class="va">flipper_length_mm</span>,</span>
-<span>      fill <span class="op">=</span> <span class="va">species</span></span>
-<span>    <span class="op">)</span></span>
-<span>  <span class="op">)</span> <span class="op">+</span></span>
-<span>  <span class="fu"><a href="https://ggplot2.tidyverse.org/reference/geom_histogram.html">geom_histogram</a></span><span class="op">(</span></span>
-<span>    bins <span class="op">=</span> <span class="fl">30</span>,</span>
-<span>    alpha <span class="op">=</span> <span class="fl">0.5</span>,</span>
-<span>    position <span class="op">=</span> <span class="st">"identity"</span></span>
-<span>  <span class="op">)</span> <span class="op">+</span></span>
-<span>  <span class="fu"><a href="https://danielvartan.github.io/brandr/reference/scale_brand.html">scale_fill_brand_d</a></span><span class="op">(</span><span class="op">)</span> <span class="op">+</span></span>
-<span>  <span class="fu"><a href="https://ggplot2.tidyverse.org/reference/labs.html">labs</a></span><span class="op">(</span></span>
-<span>    x <span class="op">=</span> <span class="st">"Flipper Length (mm)"</span>,</span>
-<span>    y <span class="op">=</span> <span class="st">"Frequency"</span>,</span>
-<span>    fill <span class="op">=</span> <span class="st">"Species"</span></span>
-<span>  <span class="op">)</span></span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
-</details><div class="cell-output-display">
-<div>
-<figure class="figure"><p><a href="index_files/figure-html/unnamed-chunk-3-1.png" class="lightbox" data-gallery="quarto-lightbox-gallery-2"><img src="index_files/figure-html/unnamed-chunk-3-1.png" class="img-fluid figure-img" width="672"></a></p>
-</figure>
-</div>
-</div>
-</div>
-</section><section id="boxplots" class="level2"><h2 class="anchored" data-anchor-id="boxplots">Boxplots</h2>
-<div class="cell">
-<details class="code-fold"><summary>Code</summary><div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb5"><pre class="downlit sourceCode r code-with-copy"><code class="sourceCode R"><span><span class="va">penguins</span> <span class="op">|&gt;</span></span>
-<span>  <span class="fu"><a href="https://tidyr.tidyverse.org/reference/drop_na.html">drop_na</a></span><span class="op">(</span></span>
-<span>    <span class="va">bill_length_mm</span>,</span>
-<span>    <span class="va">species</span></span>
-<span>  <span class="op">)</span> <span class="op">|&gt;</span></span>
-<span>  <span class="fu"><a href="https://ggplot2.tidyverse.org/reference/ggplot.html">ggplot</a></span><span class="op">(</span></span>
-<span>    <span class="fu"><a href="https://ggplot2.tidyverse.org/reference/aes.html">aes</a></span><span class="op">(</span></span>
-<span>      x <span class="op">=</span> <span class="va">species</span>,</span>
-<span>      y <span class="op">=</span> <span class="va">bill_length_mm</span>,</span>
-<span>      fill <span class="op">=</span> <span class="va">species</span></span>
-<span>    <span class="op">)</span></span>
-<span>  <span class="op">)</span> <span class="op">+</span></span>
-<span>  <span class="fu"><a href="https://ggplot2.tidyverse.org/reference/geom_boxplot.html">geom_boxplot</a></span><span class="op">(</span></span>
-<span>    outlier.color <span class="op">=</span> <span class="fu"><a href="https://danielvartan.github.io/brandr/reference/get_brand_color.html">get_brand_color</a></span><span class="op">(</span><span class="st">"dark-red"</span><span class="op">)</span></span>
-<span>  <span class="op">)</span> <span class="op">+</span></span>
-<span>  <span class="fu"><a href="https://ggplot2.tidyverse.org/reference/geom_jitter.html">geom_jitter</a></span><span class="op">(</span></span>
-<span>    width <span class="op">=</span> <span class="fl">0.2</span>,</span>
-<span>    alpha <span class="op">=</span> <span class="fl">0.1</span></span>
-<span>  <span class="op">)</span> <span class="op">+</span></span>
-<span>  <span class="fu"><a href="https://danielvartan.github.io/brandr/reference/scale_brand.html">scale_fill_brand_d</a></span><span class="op">(</span>alpha <span class="op">=</span> <span class="fl">0.7</span><span class="op">)</span> <span class="op">+</span></span>
-<span>  <span class="fu"><a href="https://ggplot2.tidyverse.org/reference/labs.html">labs</a></span><span class="op">(</span></span>
-<span>    x <span class="op">=</span> <span class="st">"Species"</span>,</span>
-<span>    y <span class="op">=</span> <span class="st">"Bill Length (mm)"</span>,</span>
-<span>    fill <span class="op">=</span> <span class="st">"Species"</span></span>
-<span>  <span class="op">)</span></span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
-</details><div class="cell-output-display">
-<div>
-<figure class="figure"><p><a href="index_files/figure-html/unnamed-chunk-4-1.png" class="lightbox" data-gallery="quarto-lightbox-gallery-3"><img src="index_files/figure-html/unnamed-chunk-4-1.png" class="img-fluid figure-img" width="672"></a></p>
-</figure>
-</div>
-</div>
-</div>
-</section><section id="density" class="level2"><h2 class="anchored" data-anchor-id="density">Density</h2>
-<div class="cell">
-<details class="code-fold"><summary>Code</summary><div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb6"><pre class="downlit sourceCode r code-with-copy"><code class="sourceCode R"><span><span class="va">penguins</span> <span class="op">|&gt;</span></span>
-<span>  <span class="fu"><a href="https://tidyr.tidyverse.org/reference/drop_na.html">drop_na</a></span><span class="op">(</span></span>
-<span>    <span class="va">flipper_length_mm</span>,</span>
-<span>    <span class="va">species</span></span>
-<span>  <span class="op">)</span> <span class="op">|&gt;</span></span>
-<span>  <span class="fu"><a href="https://ggplot2.tidyverse.org/reference/ggplot.html">ggplot</a></span><span class="op">(</span></span>
-<span>    <span class="fu"><a href="https://ggplot2.tidyverse.org/reference/aes.html">aes</a></span><span class="op">(</span></span>
-<span>      x <span class="op">=</span> <span class="va">flipper_length_mm</span>,</span>
-<span>      fill <span class="op">=</span> <span class="va">species</span></span>
-<span>    <span class="op">)</span></span>
-<span>  <span class="op">)</span> <span class="op">+</span></span>
-<span>  <span class="fu"><a href="https://ggplot2.tidyverse.org/reference/geom_density.html">geom_density</a></span><span class="op">(</span></span>
-<span>    alpha <span class="op">=</span> <span class="fl">0.5</span>,</span>
-<span>    position <span class="op">=</span> <span class="st">"identity"</span></span>
-<span>  <span class="op">)</span> <span class="op">+</span></span>
-<span>  <span class="fu"><a href="https://danielvartan.github.io/brandr/reference/scale_brand.html">scale_fill_brand_d</a></span><span class="op">(</span><span class="op">)</span> <span class="op">+</span></span>
-<span>  <span class="fu"><a href="https://ggplot2.tidyverse.org/reference/labs.html">labs</a></span><span class="op">(</span></span>
-<span>    x <span class="op">=</span> <span class="st">"Flipper Length (mm)"</span>,</span>
-<span>    y <span class="op">=</span> <span class="st">"Density"</span>,</span>
-<span>    fill <span class="op">=</span> <span class="st">"Species"</span></span>
-<span>  <span class="op">)</span> <span class="op">+</span></span>
-<span>  <span class="fu"><a href="https://ggplot2.tidyverse.org/reference/theme.html">theme</a></span><span class="op">(</span></span>
-<span>    legend.position <span class="op">=</span> <span class="st">"none"</span></span>
-<span>  <span class="op">)</span></span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
-</details><div class="cell-output-display">
-<div>
-<figure class="figure"><p><a href="index_files/figure-html/unnamed-chunk-5-1.png" class="lightbox" data-gallery="quarto-lightbox-gallery-4"><img src="index_files/figure-html/unnamed-chunk-5-1.png" class="img-fluid figure-img" width="672"></a></p>
-</figure>
-</div>
-</div>
-</div>
-</section><section id="scatterplots" class="level2"><h2 class="anchored" data-anchor-id="scatterplots">Scatterplots</h2>
-<div class="cell">
-<details class="code-fold"><summary>Code</summary><div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb7"><pre class="downlit sourceCode r code-with-copy"><code class="sourceCode R"><span><span class="va">penguins</span> <span class="op">|&gt;</span></span>
-<span>  <span class="fu"><a href="https://tidyr.tidyverse.org/reference/drop_na.html">drop_na</a></span><span class="op">(</span></span>
-<span>    <span class="va">body_mass_g</span>,</span>
-<span>    <span class="va">flipper_length_mm</span>,</span>
-<span>    <span class="va">species</span></span>
-<span>  <span class="op">)</span> <span class="op">|&gt;</span></span>
-<span>  <span class="fu"><a href="https://ggplot2.tidyverse.org/reference/ggplot.html">ggplot</a></span><span class="op">(</span></span>
-<span>    <span class="fu"><a href="https://ggplot2.tidyverse.org/reference/aes.html">aes</a></span><span class="op">(</span></span>
-<span>      x <span class="op">=</span> <span class="va">body_mass_g</span>,</span>
-<span>      y <span class="op">=</span> <span class="va">flipper_length_mm</span>,</span>
-<span>      color <span class="op">=</span> <span class="va">species</span>,</span>
-<span>      shape <span class="op">=</span> <span class="va">species</span></span>
-<span>    <span class="op">)</span></span>
-<span>  <span class="op">)</span> <span class="op">+</span></span>
-<span>  <span class="fu"><a href="https://ggplot2.tidyverse.org/reference/geom_point.html">geom_point</a></span><span class="op">(</span>size <span class="op">=</span> <span class="fl">2</span><span class="op">)</span> <span class="op">+</span></span>
-<span>  <span class="fu"><a href="https://ggplot2.tidyverse.org/reference/geom_smooth.html">geom_smooth</a></span><span class="op">(</span></span>
-<span>    method <span class="op">=</span> <span class="st">"lm"</span>,</span>
-<span>    formula <span class="op">=</span> <span class="va">y</span> <span class="op">~</span> <span class="va">x</span>,</span>
-<span>    se <span class="op">=</span> <span class="cn">FALSE</span></span>
-<span>  <span class="op">)</span> <span class="op">+</span></span>
-<span>  <span class="fu"><a href="https://danielvartan.github.io/brandr/reference/scale_brand.html">scale_color_brand_d</a></span><span class="op">(</span>alpha <span class="op">=</span> <span class="fl">0.7</span><span class="op">)</span> <span class="op">+</span></span>
-<span>  <span class="fu"><a href="https://ggplot2.tidyverse.org/reference/labs.html">labs</a></span><span class="op">(</span></span>
-<span>    x <span class="op">=</span> <span class="st">"Body Mass (g)"</span>,</span>
-<span>    y <span class="op">=</span> <span class="st">"Flipper Length (mm)"</span>,</span>
-<span>    color <span class="op">=</span> <span class="st">"Species"</span>,</span>
-<span>    shape <span class="op">=</span> <span class="st">"Species"</span></span>
-<span>  <span class="op">)</span></span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
-</details><div class="cell-output-display">
-<div>
-<figure class="figure"><p><a href="index_files/figure-html/unnamed-chunk-6-1.png" class="lightbox" data-gallery="quarto-lightbox-gallery-5"><img src="index_files/figure-html/unnamed-chunk-6-1.png" class="img-fluid figure-img" width="672"></a></p>
-</figure>
-</div>
-</div>
-</div>
-</section><section id="maps" class="level2"><h2 class="anchored" data-anchor-id="maps">Maps</h2>
-<div class="cell">
-<details class="code-fold"><summary>Code</summary><div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb8"><pre class="downlit sourceCode r code-with-copy"><code class="sourceCode R"><span><span class="va">brazil_states</span> <span class="op">&lt;-</span> <span class="fu"><a href="https://ipeagit.github.io/geobr/reference/read_state.html">read_state</a></span><span class="op">(</span>year <span class="op">=</span> <span class="fl">2024</span><span class="op">)</span></span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
-</details>
-</div>
-<div class="cell">
-<details class="code-fold"><summary>Code</summary><div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb9"><pre class="downlit sourceCode r code-with-copy"><code class="sourceCode R"><span><span class="va">data</span> <span class="op">&lt;-</span></span>
-<span>  <span class="va">brazil_states</span> <span class="op">|&gt;</span></span>
-<span>  <span class="fu"><a href="https://dplyr.tidyverse.org/reference/mutate.html">mutate</a></span><span class="op">(</span></span>
-<span>    n <span class="op">=</span> <span class="fu"><a href="https://rdrr.io/r/base/sample.html">sample</a></span><span class="op">(</span></span>
-<span>      <span class="fl">1</span><span class="op">:</span><span class="fl">1000</span>,</span>
-<span>      size <span class="op">=</span> <span class="fu"><a href="https://dplyr.tidyverse.org/reference/context.html">n</a></span><span class="op">(</span><span class="op">)</span>,</span>
-<span>      replace <span class="op">=</span> <span class="cn">TRUE</span></span>
-<span>    <span class="op">)</span>,</span>
-<span>  <span class="op">)</span></span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
-</details>
-</div>
-<div class="cell">
-<details class="code-fold"><summary>Code</summary><div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb10"><pre class="downlit sourceCode r code-with-copy"><code class="sourceCode R"><span><span class="va">plot</span> <span class="op">&lt;-</span></span>
-<span>  <span class="va">data</span> <span class="op">|&gt;</span></span>
-<span>  <span class="fu"><a href="https://ggplot2.tidyverse.org/reference/ggplot.html">ggplot</a></span><span class="op">(</span><span class="op">)</span> <span class="op">+</span></span>
-<span>  <span class="fu"><a href="https://ggplot2.tidyverse.org/reference/ggsf.html">geom_sf</a></span><span class="op">(</span></span>
-<span>    <span class="fu"><a href="https://ggplot2.tidyverse.org/reference/aes.html">aes</a></span><span class="op">(</span>fill <span class="op">=</span> <span class="va">n</span><span class="op">)</span>,</span>
-<span>    color <span class="op">=</span> <span class="fu"><a href="https://danielvartan.github.io/brandr/reference/get_brand_color.html">get_brand_color</a></span><span class="op">(</span><span class="st">"gray"</span><span class="op">)</span></span>
-<span>  <span class="op">)</span> <span class="op">+</span></span>
-<span>  <span class="fu"><a href="https://danielvartan.github.io/brandr/reference/scale_brand.html">scale_fill_brand_b</a></span><span class="op">(</span></span>
-<span>    n.breaks <span class="op">=</span> <span class="fl">6</span></span>
-<span>  <span class="op">)</span> <span class="op">+</span></span>
-<span>  <span class="fu"><a href="https://ggplot2.tidyverse.org/reference/labs.html">labs</a></span><span class="op">(</span>fill <span class="op">=</span> <span class="cn">NULL</span><span class="op">)</span> <span class="op">+</span></span>
-<span>  <span class="fu"><a href="https://paleolimbot.github.io/ggspatial/reference/annotation_scale.html">annotation_scale</a></span><span class="op">(</span></span>
-<span>    location <span class="op">=</span> <span class="st">"br"</span>,</span>
-<span>    style <span class="op">=</span> <span class="st">"tick"</span>,</span>
-<span>    width_hint <span class="op">=</span> <span class="fl">0.25</span>,</span>
-<span>    height <span class="op">=</span> <span class="fu"><a href="https://rdrr.io/r/grid/unit.html">unit</a></span><span class="op">(</span><span class="fl">0.15</span>, <span class="st">"cm"</span><span class="op">)</span></span>
-<span>  <span class="op">)</span> <span class="op">+</span></span>
-<span>  <span class="fu"><a href="https://paleolimbot.github.io/ggspatial/reference/annotation_north_arrow.html">annotation_north_arrow</a></span><span class="op">(</span></span>
-<span>    location <span class="op">=</span> <span class="st">"br"</span>,</span>
-<span>    height <span class="op">=</span> <span class="fu"><a href="https://rdrr.io/r/grid/unit.html">unit</a></span><span class="op">(</span><span class="fl">2</span>, <span class="st">"lines"</span><span class="op">)</span>,</span>
-<span>    width <span class="op">=</span> <span class="fu"><a href="https://rdrr.io/r/grid/unit.html">unit</a></span><span class="op">(</span><span class="fl">2</span>, <span class="st">"lines"</span><span class="op">)</span>,</span>
-<span>    pad_x <span class="op">=</span> <span class="fu"><a href="https://rdrr.io/r/grid/unit.html">unit</a></span><span class="op">(</span><span class="fl">0.25</span>, <span class="st">"lines"</span><span class="op">)</span>,</span>
-<span>    pad_y <span class="op">=</span> <span class="fu"><a href="https://rdrr.io/r/grid/unit.html">unit</a></span><span class="op">(</span><span class="fl">1.25</span>, <span class="st">"lines"</span><span class="op">)</span>,</span>
-<span>    style <span class="op">=</span> <span class="va">north_arrow_fancy_orienteering</span></span>
-<span>  <span class="op">)</span></span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
-</details>
-</div>
-<section id="continuous" class="level3"><h3 class="anchored" data-anchor-id="continuous">Continuous</h3>
-<div class="cell" data-messages="false">
-<details class="code-fold"><summary>Code</summary><div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb11"><pre class="downlit sourceCode r code-with-copy"><code class="sourceCode R"><span><span class="va">plot</span></span>
-<span><span class="co">#&gt; Scale on map varies by more than 10%, scale bar may be inaccurate</span></span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
-</details><div class="cell-output-display">
-<div>
-<figure class="figure"><p><a href="index_files/figure-html/unnamed-chunk-10-1.png" class="lightbox" data-gallery="quarto-lightbox-gallery-6"><img src="index_files/figure-html/unnamed-chunk-10-1.png" class="img-fluid figure-img" width="672"></a></p>
-</figure>
-</div>
-</div>
-</div>
-</section><section id="diverging" class="level3"><h3 class="anchored" data-anchor-id="diverging">Diverging</h3>
-<div class="cell" data-messages="false">
-<details class="code-fold"><summary>Code</summary><div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb12"><pre class="downlit sourceCode r code-with-copy"><code class="sourceCode R"><span><span class="va">plot</span> <span class="op">+</span></span>
-<span>  <span class="fu"><a href="https://danielvartan.github.io/brandr/reference/scale_brand.html">scale_fill_brand_b</a></span><span class="op">(</span></span>
-<span>    color_type <span class="op">=</span> <span class="st">"div"</span>,</span>
-<span>    n.breaks <span class="op">=</span> <span class="fl">6</span></span>
-<span>  <span class="op">)</span></span>
-<span><span class="co">#&gt; Scale for fill is already present.</span></span>
-<span><span class="co">#&gt; Adding another scale for fill, which will replace the existing scale.</span></span>
-<span><span class="co">#&gt; Scale on map varies by more than 10%, scale bar may be inaccurate</span></span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
-</details><div class="cell-output-display">
-<div>
-<figure class="figure"><p><a href="index_files/figure-html/unnamed-chunk-11-1.png" class="lightbox" data-gallery="quarto-lightbox-gallery-7"><img src="index_files/figure-html/unnamed-chunk-11-1.png" class="img-fluid figure-img" width="672"></a></p>
-</figure>
-</div>
-</div>
-</div>
+</section></section><section id="charts" class="level1"><h1>Charts</h1>
+<section id="comparison" class="level2"><h2 class="anchored" data-anchor-id="comparison">Comparison</h2>
+<section id="static" class="level3"><h3 class="anchored" data-anchor-id="static">Static</h3>
+<section id="one-variable-single-bar-chart" class="level4"><h4 class="anchored" data-anchor-id="one-variable-single-bar-chart">One Variable: Single Bar Chart</h4>
+</section><section id="two-variables-viariable-widht-column-chart" class="level4"><h4 class="anchored" data-anchor-id="two-variables-viariable-widht-column-chart">Two Variables: Viariable Widht Column Chart</h4>
+</section><section id="three-or-more-variables" class="level4"><h4 class="anchored" data-anchor-id="three-or-more-variables">Three or More Variables</h4>
+<section id="few-items-multiple-bar-charts" class="level5"><h5 class="anchored" data-anchor-id="few-items-multiple-bar-charts">Few Items: Multiple Bar Charts</h5>
+</section><section id="many-items-table-with-embedded-charts" class="level5"><h5 class="anchored" data-anchor-id="many-items-table-with-embedded-charts">Many Items: Table With Embedded Charts</h5>
+</section></section></section><section id="changing-over-time" class="level3"><h3 class="anchored" data-anchor-id="changing-over-time">Changing Over Time</h3>
+<section id="many-periods" class="level4"><h4 class="anchored" data-anchor-id="many-periods">Many Periods</h4>
+<section id="cyclical-data-circular-area-chart" class="level5"><h5 class="anchored" data-anchor-id="cyclical-data-circular-area-chart">Cyclical Data: Circular Area Chart</h5>
+</section><section id="noncyclical-data-line-chart" class="level5"><h5 class="anchored" data-anchor-id="noncyclical-data-line-chart">Noncyclical Data: Line Chart</h5>
+</section></section><section id="few-periods" class="level4"><h4 class="anchored" data-anchor-id="few-periods">Few Periods</h4>
+<section id="single-or-few-items-column-chart" class="level5"><h5 class="anchored" data-anchor-id="single-or-few-items-column-chart">Single or Few Items: Column Chart</h5>
+</section><section id="many-items-line-chart" class="level5"><h5 class="anchored" data-anchor-id="many-items-line-chart">Many Items: Line Chart</h5>
+</section></section></section></section><section id="distribution" class="level2"><h2 class="anchored" data-anchor-id="distribution">Distribution</h2>
+<section id="single-variable" class="level3"><h3 class="anchored" data-anchor-id="single-variable">Single Variable</h3>
+<section id="few-items-column-histogram" class="level4"><h4 class="anchored" data-anchor-id="few-items-column-histogram">Few Items: Column Histogram</h4>
+</section><section id="many-items-line-histogram" class="level4"><h4 class="anchored" data-anchor-id="many-items-line-histogram">Many Items: Line Histogram</h4>
+</section></section><section id="two-variables-scatter-chart" class="level3"><h3 class="anchored" data-anchor-id="two-variables-scatter-chart">Two Variables: Scatter Chart</h3>
+</section><section id="three-variables-3d-area-chart" class="level3"><h3 class="anchored" data-anchor-id="three-variables-3d-area-chart">Three Variables: 3D Area Chart</h3>
+</section></section><section id="composition" class="level2"><h2 class="anchored" data-anchor-id="composition">Composition</h2>
+<section id="changin-over-time" class="level3"><h3 class="anchored" data-anchor-id="changin-over-time">Changin Over Time</h3>
+<section id="few-periods-1" class="level4"><h4 class="anchored" data-anchor-id="few-periods-1">Few Periods</h4>
+<section id="only-relative-differences-matter-stacked-100-column-chart" class="level5"><h5 class="anchored" data-anchor-id="only-relative-differences-matter-stacked-100-column-chart">Only Relative Differences Matter: Stacked 100% Column Chart</h5>
+</section><section id="relative-and-absolute-differences-matter-stacked-column-chart" class="level5"><h5 class="anchored" data-anchor-id="relative-and-absolute-differences-matter-stacked-column-chart">Relative and Absolute Differences Matter: Stacked Column Chart</h5>
+</section></section><section id="many-periods-1" class="level4"><h4 class="anchored" data-anchor-id="many-periods-1">Many Periods</h4>
+<section id="only-relative-differences-matter-stacked-100-area-chart" class="level5"><h5 class="anchored" data-anchor-id="only-relative-differences-matter-stacked-100-area-chart">Only Relative Differences Matter: Stacked 100% Area Chart</h5>
+</section><section id="relative-and-absolute-differences-matter-stacked-area-chart" class="level5"><h5 class="anchored" data-anchor-id="relative-and-absolute-differences-matter-stacked-area-chart">Relative and Absolute Differences Matter: Stacked Area Chart</h5>
+</section></section></section><section id="static-1" class="level3"><h3 class="anchored" data-anchor-id="static-1">Static</h3>
+<section id="simple-share-of-total-pie-chart" class="level4"><h4 class="anchored" data-anchor-id="simple-share-of-total-pie-chart">Simple Share of Total: Pie Chart</h4>
+</section><section id="accumulation-or-subtraction-to-total-waterfall-chart" class="level4"><h4 class="anchored" data-anchor-id="accumulation-or-subtraction-to-total-waterfall-chart">Accumulation or Subtraction to Total: Waterfall Chart</h4>
+</section><section id="components-of-components-stacked-100-column-chart-with-subcomponents" class="level4"><h4 class="anchored" data-anchor-id="components-of-components-stacked-100-column-chart-with-subcomponents">Components of Components: Stacked 100% Column Chart With Subcomponents</h4>
+</section></section></section><section id="relationship" class="level2"><h2 class="anchored" data-anchor-id="relationship">Relationship</h2>
+<section id="two-variables-scatter-chart-1" class="level3"><h3 class="anchored" data-anchor-id="two-variables-scatter-chart-1">Two Variables: Scatter Chart</h3>
+</section><section id="three-variables-bubble-chart" class="level3"><h3 class="anchored" data-anchor-id="three-variables-bubble-chart">Three Variables: Bubble Chart</h3>
+</section></section></section><section id="maps" class="level1"><h1>Maps</h1>
+<section id="distribution-1" class="level2"><h2 class="anchored" data-anchor-id="distribution-1">Distribution</h2>
+<section id="discrete-dot-map" class="level3"><h3 class="anchored" data-anchor-id="discrete-dot-map">Discrete: Dot Map</h3>
+<p>1 dot = 1 unit</p>
+</section><section id="continuous-heatmap" class="level3"><h3 class="anchored" data-anchor-id="continuous-heatmap">Continuous: Heatmap</h3>
+<p>Color = Density</p>
+</section></section><section id="quantity" class="level2"><h2 class="anchored" data-anchor-id="quantity">Quantity</h2>
+<section id="by-region-choropleth" class="level3"><h3 class="anchored" data-anchor-id="by-region-choropleth">By Region: Choropleth</h3>
+<p>Color = Intenisty</p>
+</section><section id="by-point-proportional-symbol" class="level3"><h3 class="anchored" data-anchor-id="by-point-proportional-symbol">By Point: Proportional Symbol</h3>
+<p>Size = Value</p>
+</section></section><section id="location" class="level2"><h2 class="anchored" data-anchor-id="location">Location</h2>
+<section id="simple-marker-map" class="level3"><h3 class="anchored" data-anchor-id="simple-marker-map">Simple: Marker Map</h3>
+<p>Pin = 1 Place</p>
+</section><section id="categorical-categorical-icons" class="level3"><h3 class="anchored" data-anchor-id="categorical-categorical-icons">Categorical: Categorical Icons</h3>
+<p>1 icon = category</p>
+</section></section><section id="flow" class="level2"><h2 class="anchored" data-anchor-id="flow">Flow</h2>
+<section id="origin-to-destination-flow-map" class="level3"><h3 class="anchored" data-anchor-id="origin-to-destination-flow-map">Origin to Destination: Flow Map</h3>
+<p>Width = Volume</p>
+</section><section id="continuous-route-track" class="level3"><h3 class="anchored" data-anchor-id="continuous-route-track">Continuous: Route Track</h3>
+<p>GPS/Rout Path</p>
+</section></section><section id="comparsion" class="level2"><h2 class="anchored" data-anchor-id="comparsion">Comparsion</h2>
+<section id="distortion-cartogram" class="level3"><h3 class="anchored" data-anchor-id="distortion-cartogram">Distortion: Cartogram</h3>
+<p>Propotional area to the value</p>
+</section><section id="keep-shape-isochrone" class="level3"><h3 class="anchored" data-anchor-id="keep-shape-isochrone">Keep Shape: Isochrone</h3>
+<p>Time Rings</p>
+</section></section><section id="special-cases-combinations" class="level2"><h2 class="anchored" data-anchor-id="special-cases-combinations">Special Cases &amp; Combinations</h2>
+<section id="multiple-variables-bivariant-map-or-combined-map" class="level3"><h3 class="anchored" data-anchor-id="multiple-variables-bivariant-map-or-combined-map">Multiple Variables: Bivariant Map or Combined Map</h3>
+</section><section id="terrainrelief-hillshadecontour3d" class="level3"><h3 class="anchored" data-anchor-id="terrainrelief-hillshadecontour3d">Terrain/Relief: Hillshade/Contour/3D</h3>
+</section><section id="networkconnection-geospatial-map-node-link-map" class="level3"><h3 class="anchored" data-anchor-id="networkconnection-geospatial-map-node-link-map">Network/Connection: Geospatial Map (node-link map)</h3>
+</section><section id="temporal-data-animated-map" class="level3"><h3 class="anchored" data-anchor-id="temporal-data-animated-map">Temporal Data: Animated Map</h3>
 </section></section><section id="license" class="level2"><h2 class="anchored" data-anchor-id="license">License</h2>
 <div style="text-align: left;">
 <p><a href="https://www.gnu.org/licenses/gpl-3.0"><img src="https://img.shields.io/badge/license-GPLv3-bd0000.svg" class="img-fluid" alt="License: GPLv3"></a> <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/"><img src="https://img.shields.io/badge/license-CC_BY--NC--SA_4.0-lightgrey.svg" class="img-fluid" alt="License: CC BY-NC-SA 4.0"></a></p>
@@ -1108,38 +949,7 @@ Wilkinson, L. (2005). <em>The grammar of graphics</em> (J. Chambers, D. Hand, &a
   });
   </script>
 </div> <!-- /content -->
-<footer class="footer"><div class="nav-footer"><div class="nav-footer-center"><div class="toc-actions d-sm-block d-md-none"><ul><li><a href="https://github.com/marciopizzonia/visual-style/edit/main/index.qmd" class="toc-action"><i class="bi bi-github"></i>Edit this page</a></li><li><a href="https://github.com/marciopizzonia/visual-style/blob/main/index.qmd" class="toc-action"><i class="bi empty"></i>View source</a></li><li><a href="https://github.com/marciopizzonia/visual-style/issues/" class="toc-action"><i class="bi empty"></i>Report an issue</a></li></ul></div></div></div></footer><script>var lightboxQuarto = GLightbox({"closeEffect":"zoom","descPosition":"bottom","loop":false,"openEffect":"zoom","selector":".lightbox"});
-(function() {
-  let previousOnload = window.onload;
-  window.onload = () => {
-    if (previousOnload) {
-      previousOnload();
-    }
-    lightboxQuarto.on('slide_before_load', (data) => {
-      const { slideIndex, slideNode, slideConfig, player, trigger } = data;
-      const href = trigger.getAttribute('href');
-      if (href !== null) {
-        const imgEl = window.document.querySelector(`a[href="${href}"] img`);
-        if (imgEl !== null) {
-          const srcAttr = imgEl.getAttribute("src");
-          if (srcAttr && srcAttr.startsWith("data:")) {
-            slideConfig.href = srcAttr;
-          }
-        }
-      } 
-    });
-  
-    lightboxQuarto.on('slide_after_load', (data) => {
-      const { slideIndex, slideNode, slideConfig, player, trigger } = data;
-      if (window.Quarto?.typesetMath) {
-        window.Quarto.typesetMath(slideNode);
-      }
-    });
-  
-  };
-  
-})();
-          </script>
 
 
-</body></html>
+
+<footer class="footer"><div class="nav-footer"><div class="nav-footer-center"><div class="toc-actions d-sm-block d-md-none"><ul><li><a href="https://github.com/marciopizzonia/visual-style/edit/main/index.qmd" class="toc-action"><i class="bi bi-github"></i>Edit this page</a></li><li><a href="https://github.com/marciopizzonia/visual-style/blob/main/index.qmd" class="toc-action"><i class="bi empty"></i>View source</a></li><li><a href="https://github.com/marciopizzonia/visual-style/issues/" class="toc-action"><i class="bi empty"></i>Report an issue</a></li></ul></div></div></div></footer></body></html>
